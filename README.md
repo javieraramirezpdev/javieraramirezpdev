@@ -10,7 +10,7 @@
 <a href="https://api.whatsapp.com/send/?phone=56975260688&text&type=phone_number&app_absent=0">
   <img src="https://img.shields.io/badge/WhatsApp-8B5CF6?style=for-the-badge&logo=whatsapp&logoColor=FCFAFF" />
 </a>
-<a href="mailto:javiera.ramirez.mkt@gmail.com">
+<a href="mailto:javiera.ramirezp.dev@gmail.com">
   <img src="https://img.shields.io/badge/Email-F472B6?style=for-the-badge&logo=gmail&logoColor=2D2140" />
 </a>
 <a href="https://github.com/javieraramirezpdev">
