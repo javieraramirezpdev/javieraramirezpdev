@@ -103,7 +103,7 @@ Actualmente explorando el mundo **fullstack**, un componente a la vez.
 
 ## 💡 Dato random
 
-Vengo del mundo del marketing digital y la técnica veterinaria, y ahora estoy programando. Si algo no compila, probablemente le puse demasiado storytelling. 🐾💻
+Del marketing digital al desarrollo frontend: aportando una visión centrada en el usuario y los objetivos del negocio 🐾💻
 
 <br/>
 
