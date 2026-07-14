@@ -21,7 +21,7 @@
 
 <br/>
 
-## Hola, mundo. 💜
+## Hola mundo 💜
 
 <img align="right" width="270" src="https://readme-typing-svg.demolab.com/?lines=%3C+desarrollo+web+%2F%3E;const+frontend+%3D+%22React%22;interfaces.build().love();console.log(%22hola%20mundo%22);&font=Fira%20Code&size=16&duration=3000&pause=1000&color=8B5CF6&center=false&vCenter=true&width=400&height=100">
 
