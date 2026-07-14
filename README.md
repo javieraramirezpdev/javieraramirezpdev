@@ -25,9 +25,9 @@
 
 <img align="right" width="270" src="https://readme-typing-svg.demolab.com/?lines=%3C+desarrollo+web+%2F%3E;const+frontend+%3D+%22React%22;interfaces.build().love();console.log(%22hola%20mundo%22);&font=Fira%20Code&size=16&duration=3000&pause=1000&color=8B5CF6&center=false&vCenter=true&width=400&height=100">
 
-Soy **Javiera**, estudiante de **Programación y Análisis de Sistemas** y desarrolladora frontend en formación, con base en Chile.
+Soy **Javiera**, estudiante de **Programación y análisis de Sistemas** y desarrolladora frontend en formación.
 
-Me interesa el desarrollo de software, el análisis de datos y crear interfaces dinámicas y funcionales. Vengo del área de marketing digital, así que combino pensamiento analítico con mirada de producto y experiencia de usuario.
+Me interesa el desarrollo de software, el análisis de datos y crear interfaces dinámicas y funcionales. Con formación en el área de marketing digital, así que combino pensamiento analítico con mirada de producto y experiencia de usuario.
 
 Actualmente explorando el mundo **fullstack**, un componente a la vez.
 
@@ -41,7 +41,6 @@ Actualmente explorando el mundo **fullstack**, un componente a la vez.
   <img src="https://img.shields.io/badge/JavaScript-2D2140?style=for-the-badge&logo=javascript&logoColor=FBBF24" />
   <img src="https://img.shields.io/badge/TypeScript-7C3AED?style=for-the-badge&logo=typescript&logoColor=FCFAFF" />
   <img src="https://img.shields.io/badge/React-2D2140?style=for-the-badge&logo=react&logoColor=F472B6" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-8B5CF6?style=for-the-badge&logo=tailwindcss&logoColor=FCFAFF" />
   <img src="https://img.shields.io/badge/Python-2D2140?style=for-the-badge&logo=python&logoColor=FBBF24" />
   <img src="https://img.shields.io/badge/Power_BI-F472B6?style=for-the-badge&logo=powerbi&logoColor=2D2140" />
 </div>
@@ -52,6 +51,7 @@ Actualmente explorando el mundo **fullstack**, un componente a la vez.
 
 - 🎓 Programación y Análisis de Sistemas — Instituto AIEP *(2026 – en curso)*
 - 🎓 Marketing Digital — Fundación Generation Chile *(2025)*
+- 📜 Certificado Profesional de Google Marketing digital y comercio electrónico — Google *(2026)*
 - 📜 Certificado profesional de Google IT Automatización con Python — Google *(2026)*
 - 📜 Desarrollador Front-end Trainee — Talento Digital *(2026)*
 - 📜 Curso de Inmersión IA + Google Gemini — Alura Latam *(2025)*
