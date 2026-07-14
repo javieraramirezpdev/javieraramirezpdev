@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Javiera Ramírez · Desarrolladora Frontend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --texto: #2D2140;
+            --bg: #FCFAFF;
+            --principal: #8B5CF6;
+            --hover: #7C3AED;
+            --detalle: #F472B6;
+            --acento: #FBBF24;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .font-display { font-family: 'Sora', system-ui, sans-serif; }
+        ::selection { background: #8B5CF6; color: #fff; }
+        .aura {
+            background-color: #FCFAFF;
+            background-image:
+                radial-gradient(680px circle at 8% -8%, rgba(139,92,246,0.12), transparent 60%),
+                radial-gradient(640px circle at 96% 18%, rgba(244,114,182,0.12), transparent 60%),
+                radial-gradient(560px circle at 50% 108%, rgba(251,191,36,0.10), transparent 60%);
+            background-attachment: fixed;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+            .reveal.in { opacity: 1; transform: none; }
+        }
+        a:focus-visible, button:focus-visible { outline: 2px solid #8B5CF6; outline-offset: 3px; }
+    </style>
+</head>
+
+<body class="text-[#2D2140] antialiased aura">
+
+    <!-- NAV -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#FCFAFF]/80 border-b border-[#2D2140]/10">
+        <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#top" class="font-display font-extrabold text-lg tracking-tight flex items-center gap-2">
+                <span class="inline-grid place-items-center w-7 h-7 rounded-md bg-[#8B5CF6] text-white text-sm">J</span>
+                Javiera Ramírez
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[#2D2140]/70">
+                <a href="#about" class="hover:text-[#7C3AED] transition">Sobre mí</a>
+                <a href="#projects" class="hover:text-[#7C3AED] transition">Proyectos</a>
+                <a href="#stack" class="hover:text-[#7C3AED] transition">Tecnologías</a>
+                <a href="#experience" class="hover:text-[#7C3AED] transition">Experiencia</a>
+                <a href="#education" class="hover:text-[#7C3AED] transition">Formación</a>
+            </div>
+            <a href="#contact" class="text-sm font-semibold px-4 py-2 rounded-lg bg-[#2D2140] text-[#FCFAFF] hover:bg-[#7C3AED] transition">Hablemos</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <!-- HERO -->
+        <section class="max-w-5xl mx-auto px-6 pt-20 pb-24">
+            <p class="reveal inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-6">
+                <span class="w-8 h-px bg-[#7C3AED]"></span>
+                Desarrollo Frontend
+            </p>
+            <h1 class="reveal font-display font-extrabold tracking-tight text-4xl sm:text-6xl leading-[1.05] max-w-3xl">
+                Convierto ideas en interfaces <span class="text-[#8B5CF6]">claras</span> y <span class="text-[#F472B6]">funcionales</span>
+            </h1>
+            <p class="reveal mt-6 text-lg text-[#2D2140]/70 max-w-2xl leading-relaxed">
+                Soy estudiante de <strong class="font-semibold text-[#2D2140]">Programación y Análisis de Sistemas</strong> y desarrolladora frontend en formación. Vengo del marketing digital, así que antes de escribir código pienso en quién va a usarlo.
+            </p>
+            <div class="reveal mt-9 flex flex-wrap gap-3">
+                <a href="#contact" class="px-6 py-3 rounded-lg bg-[#8B5CF6] text-white font-semibold hover:bg-[#7C3AED] transition shadow-sm">
+                    Hablemos de tu proyecto
+                </a>
+                <a href="#projects" class="px-6 py-3 rounded-lg border border-[#2D2140]/15 font-semibold hover:border-[#7C3AED] hover:text-[#7C3AED] transition">
+                    Ver proyectos
+                </a>
+            </div>
+        </section>
+
+        <!-- VALUE STRIP -->
+        <section class="border-y border-[#2D2140]/10 bg-[#2D2140] text-[#FCFAFF]">
+            <div class="max-w-5xl mx-auto px-6 py-10 grid sm:grid-cols-3 gap-8">
+                <div class="reveal">
+                    <i class="fa-solid fa-eye text-[#F472B6] text-xl mb-3"></i>
+                    <h3 class="font-display font-semibold mb-1">Pienso en quien usa</h3>
+                    <p class="text-sm text-[#FCFAFF]/60">Vengo de marketing digital: entiendo audiencia, UX y conversión antes de tocar código.</p>
+                </div>
+                <div class="reveal">
+                    <i class="fa-solid fa-code text-[#8B5CF6] text-xl mb-3"></i>
+                    <h3 class="font-display font-semibold mb-1">Construyo con bases sólidas</h3>
+                    <p class="text-sm text-[#FCFAFF]/60">HTML, CSS, JavaScript, React y Tailwind, con foco en interfaces limpias y responsivas.</p>
+                </div>
+                <div class="reveal">
+                    <i class="fa-solid fa-arrow-trend-up text-[#FBBF24] text-xl mb-3"></i>
+                    <h3 class="font-display font-semibold mb-1">Aprendo rápido</h3>
+                    <p class="text-sm text-[#FCFAFF]/60">Certificaciones activas y aprendizaje continuo, siempre sumando una herramienta nueva.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="max-w-5xl mx-auto px-6 py-24">
+            <div class="grid md:grid-cols-[1fr_1.4fr] gap-12 items-start">
+                <div class="reveal">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-3">Sobre mí</p>
+                    <h2 class="font-display font-bold text-3xl tracking-tight">De contar historias<br>a construir interfaces.</h2>
+                </div>
+                <div class="reveal space-y-4 text-[#2D2140]/75 leading-relaxed text-lg">
+                    <p>
+                        Me interesa el desarrollo de software, el análisis de datos y las soluciones tecnológicas, con conocimientos en metodologías ágiles. Me destaco por mi pensamiento analítico, organización y aprendizaje continuo.
+                    </p>
+                    <p>
+                        Empecé en <strong class="text-[#2D2140] font-semibold">marketing digital</strong>, gestionando campañas, CRM y contenido para marcas — ahí aprendí a mirar un producto desde el usuario. Hoy aplico esa misma mirada al frontend: cada interfaz que construyo tiene que ser clara, útil y fácil de usar para quien está al otro lado de la pantalla.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="bg-white/60 border-y border-[#2D2140]/10">
+            <div class="max-w-5xl mx-auto px-6 py-24">
+                <p class="reveal text-xs font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-3">Proyectos</p>
+                <h2 class="reveal font-display font-bold text-3xl tracking-tight mb-12">Cosas que he construido</h2>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <!-- Card -->
+                    <article class="reveal group rounded-2xl bg-[#FCFAFF] border border-[#2D2140]/10 hover:border-[#8B5CF6] hover:shadow-lg transition overflow-hidden">
+                        <a href="https://github.com/javieraramirezpdev/Bytebook-library" target="_blank" rel="noopener" class="block aspect-video overflow-hidden bg-[#2D2140]/5">
+                            <img src="https://opengraph.githubassets.com/1/javieraramirezpdev/Bytebook-library" alt="Portada de Bytebook Library" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </a>
+                        <div class="p-7">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="inline-grid place-items-center w-9 h-9 rounded-lg bg-[#8B5CF6]/10 text-[#7C3AED]"><i class="fa-solid fa-book"></i></span>
+                                <a href="https://github.com/javieraramirezpdev/Bytebook-library" target="_blank" rel="noopener">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[#2D2140]/20 group-hover:text-[#7C3AED] transition"></i>
+                                </a>
+                            </div>
+                            <h3 class="font-display font-semibold text-xl mb-2">Bytebook Library</h3>
+                            <p class="text-[#2D2140]/65 text-sm leading-relaxed">Plataforma de biblioteca digital, construida practicando estructura, lógica y organización de contenido.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card -->
+                    <article class="reveal group rounded-2xl bg-[#FCFAFF] border border-[#2D2140]/10 hover:border-[#8B5CF6] hover:shadow-lg transition overflow-hidden">
+                        <a href="https://github.com/javieraramirezpdev/Centroholistico-Prananimal" target="_blank" rel="noopener" class="block aspect-video overflow-hidden bg-[#2D2140]/5">
+                            <img src="https://opengraph.githubassets.com/1/javieraramirezpdev/Centroholistico-Prananimal" alt="Portada de Centro Holístico Prananimal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </a>
+                        <div class="p-7">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="inline-grid place-items-center w-9 h-9 rounded-lg bg-[#F472B6]/10 text-[#F472B6]"><i class="fa-solid fa-paw"></i></span>
+                                <a href="https://github.com/javieraramirezpdev/Centroholistico-Prananimal" target="_blank" rel="noopener">
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[#2D2140]/20 group-hover:text-[#7C3AED] transition"></i>
+                                </a>
+                            </div>
+                            <h3 class="font-display font-semibold text-xl mb-2">Centro Holístico Prananimal</h3>
+                            <p class="text-[#2D2140]/65 text-sm leading-relaxed">Sitio web para un centro holístico animal: presentación de servicios y contacto directo con clientes.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card -->
+                    <article class="reveal group p-7 rounded-2xl bg-[#FCFAFF] border border-[#2D2140]/10 hover:border-[#8B5CF6] hover:shadow-lg transition">
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="inline-grid place-items-center w-11 h-11 rounded-xl bg-[#FBBF24]/15 text-[#c99000]"><i class="fa-solid fa-plane text-lg"></i></span>
+                            <a href="https://github.com/javieraramirezpdev/Proyecto-aeropuerto" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[#2D2140]/20 group-hover:text-[#7C3AED] transition"></i>
+                            </a>
+                        </div>
+                        <h3 class="font-display font-semibold text-xl mb-2">Proyecto Aeropuerto</h3>
+                        <p class="text-[#2D2140]/65 text-sm leading-relaxed">Sistema de gestión desarrollado en Java, aplicando lógica de programación y estructuras de datos.</p>
+                    </article>
+
+                    <!-- Card -->
+                    <article class="reveal group p-7 rounded-2xl bg-[#FCFAFF] border border-[#2D2140]/10 hover:border-[#8B5CF6] hover:shadow-lg transition">
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="inline-grid place-items-center w-11 h-11 rounded-xl bg-[#8B5CF6]/10 text-[#7C3AED]"><i class="fa-solid fa-wallet text-lg"></i></span>
+                            <a href="https://github.com/javieraramirezpdev/SaldoXWallet" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[#2D2140]/20 group-hover:text-[#7C3AED] transition"></i>
+                            </a>
+                        </div>
+                        <h3 class="font-display font-semibold text-xl mb-2">SaldoX Wallet</h3>
+                        <p class="text-[#2D2140]/65 text-sm leading-relaxed">Billetera digital chilena: interfaz pensada para un flujo de pago simple y confiable.</p>
+                    </article>
+                </div>
+
+                <p class="reveal mt-8 text-sm text-[#2D2140]/50">
+                    <a href="https://github.com/javieraramirezpdev?tab=repositories" target="_blank" rel="noopener" class="text-[#7C3AED] font-medium hover:underline">Ver todos mis repositorios en GitHub →</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- STACK -->
+        <section id="stack" class="max-w-5xl mx-auto px-6 py-24">
+            <p class="reveal text-xs font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-3">Tecnologías</p>
+            <h2 class="reveal font-display font-bold text-3xl tracking-tight mb-10">Con lo que trabajo</h2>
+            <ul class="reveal flex flex-wrap gap-3">
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#8B5CF6] hover:text-[#7C3AED] transition"><i class="fa-brands fa-html5 mr-2 text-[#7C3AED]"></i>HTML5</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#8B5CF6] hover:text-[#7C3AED] transition"><i class="fa-brands fa-css3-alt mr-2 text-[#7C3AED]"></i>CSS3</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#8B5CF6] hover:text-[#7C3AED] transition"><i class="fa-brands fa-js mr-2 text-[#7C3AED]"></i>JavaScript</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#8B5CF6] hover:text-[#7C3AED] transition"><i class="fa-solid fa-t mr-2 text-[#7C3AED]"></i>TypeScript</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#8B5CF6] hover:text-[#7C3AED] transition"><i class="fa-brands fa-react mr-2 text-[#7C3AED]"></i>React</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#8B5CF6] hover:text-[#7C3AED] transition"><i class="fa-solid fa-wind mr-2 text-[#7C3AED]"></i>Tailwind CSS</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#8B5CF6] hover:text-[#7C3AED] transition"><i class="fa-solid fa-plug mr-2 text-[#7C3AED]"></i>APIs REST</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#8B5CF6] hover:text-[#7C3AED] transition"><i class="fa-brands fa-python mr-2 text-[#7C3AED]"></i>Python</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#F472B6] hover:text-[#F472B6] transition"><i class="fa-solid fa-chart-column mr-2 text-[#F472B6]"></i>Power BI</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#F472B6] hover:text-[#F472B6] transition"><i class="fa-brands fa-google mr-2 text-[#F472B6]"></i>Google Analytics</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#F472B6] hover:text-[#F472B6] transition"><i class="fa-solid fa-magnifying-glass-dollar mr-2 text-[#F472B6]"></i>Google Ads</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#F472B6] hover:text-[#F472B6] transition"><i class="fa-solid fa-magnifying-glass mr-2 text-[#F472B6]"></i>SEMrush</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#FBBF24] hover:text-[#c99000] transition"><i class="fa-brands fa-salesforce mr-2 text-[#c99000]"></i>Salesforce CRM</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#FBBF24] hover:text-[#c99000] transition"><i class="fa-solid fa-users mr-2 text-[#c99000]"></i>Zoho CRM</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#FBBF24] hover:text-[#c99000] transition"><i class="fa-brands fa-trello mr-2 text-[#c99000]"></i>Trello</li>
+                <li class="px-4 py-2 rounded-lg bg-white border border-[#2D2140]/10 font-medium text-sm hover:border-[#FBBF24] hover:text-[#c99000] transition"><i class="fa-solid fa-note-sticky mr-2 text-[#c99000]"></i>Notion</li>
+            </ul>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="bg-white/60 border-y border-[#2D2140]/10">
+            <div class="max-w-5xl mx-auto px-6 py-24">
+                <p class="reveal text-xs font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-3">Experiencia</p>
+                <h2 class="reveal font-display font-bold text-3xl tracking-tight mb-10">Dónde he trabajado</h2>
+                <div class="reveal border-l-2 border-[#8B5CF6]/30 pl-6 space-y-10">
+
+                    <div class="relative">
+                        <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-[#8B5CF6] ring-4 ring-[#FCFAFF]"></span>
+                        <p class="text-[#2D2140]/65 text-sm mt-1">Diciembre 2025 – mayo 2026</p>
+                        <h3 class="font-display font-semibold text-lg">Práctica en Marketing Digital</h3>
+                        <p class="text-[#2D2140]/65 text-sm mt-1">MG Motor Chile</p>
+                        <ul class="mt-3 text-[#2D2140]/70 text-sm leading-relaxed list-disc list-inside space-y-1">
+                            <li>Desarrollé propuestas de contenido para campañas digitales, ajustadas a los lineamientos de la marca y la agencia.</li>
+                            <li>Participé en la optimización de contenido para mejorar el engagement en redes sociales y landing page.</li>
+                            <li>Gestioné el CRM (Salesforce y Zoho), apoyando el seguimiento y organización de leads comerciales.</li>
+                        </ul>
+                        <p class="mt-3 inline-flex items-start gap-2 text-sm bg-[#FBBF24]/15 text-[#8a6600] px-3 py-2 rounded-lg">
+                            <i class="fa-solid fa-star mt-0.5"></i>
+                            <span>Optimicé el contenido de un concurso en la landing page de MG Motor, aplicando diseño UX para distintos perfiles de cliente y logrando un <strong>+20% de leads</strong>.</span>
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-[#8B5CF6] ring-4 ring-[#FCFAFF]"></span>
+                        <p class="text-[#2D2140]/65 text-sm mt-1">Junio – agosto 2025</p>
+                        <h3 class="font-display font-semibold text-lg">Marketing Digital</h3>
+                        <p class="text-[#2D2140]/65 text-sm mt-1">Generation Chile</p>
+                        <ul class="mt-3 text-[#2D2140]/70 text-sm leading-relaxed list-disc list-inside space-y-1">
+                            <li>Diseñé la construcción de marca y estrategia digital para una startup enfocada en emprendedores jóvenes.</li>
+                            <li>Creé, junto a dos compañeros, una landing page en WordPress conectada a un formulario para entregar un ebook gratuito.</li>
+                            <li>Coordiné la publicación de contenido con enfoque en storytelling.</li>
+                        </ul>
+                        <p class="mt-3 inline-flex items-start gap-2 text-sm bg-[#FBBF24]/15 text-[#8a6600] px-3 py-2 rounded-lg">
+                            <i class="fa-solid fa-star mt-0.5"></i>
+                            <span><strong>60 leads</strong>, <strong>+155 seguidores</strong> y <strong>10.2k visualizaciones</strong> en un mes.</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="max-w-5xl mx-auto px-6 py-24">
+            <p class="reveal text-xs font-semibold uppercase tracking-[0.2em] text-[#7C3AED] mb-3">Formación</p>
+            <h2 class="reveal font-display font-bold text-3xl tracking-tight mb-10">Base académica</h2>
+            <div class="reveal border-l-2 border-[#8B5CF6]/30 pl-6 space-y-8">
+                <div class="relative">
+                    <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-[#8B5CF6] ring-4 ring-[#FCFAFF]"></span>
+                    <p class="text-[#2D2140]/65 text-sm mt-1">2026 – en curso</p>
+                    <h3 class="font-display font-semibold text-lg">Programación y Análisis de Sistemas</h3>
+                    <p class="text-[#2D2140]/65 text-sm mt-1">Instituto AIEP</p>
+                </div>
+                <div class="relative">
+                    <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-[#8B5CF6] ring-4 ring-[#FCFAFF]"></span>
+                    <p class="text-[#2D2140]/65 text-sm mt-1">2025</p>
+                    <h3 class="font-display font-semibold text-lg">Marketing Digital</h3>
+                    <p class="text-[#2D2140]/65 text-sm mt-1">Fundación Generation Chile</p>
+                </div>
+                <div class="relative">
+                    <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-[#8B5CF6] ring-4 ring-[#FCFAFF]"></span>
+                    <p class="text-[#2D2140]/65 text-sm mt-1">2020 – 2023</p>
+                    <h3 class="font-display font-semibold text-lg">Técnico Veterinario y Producción Pecuaria</h3>
+                    <p class="text-[#2D2140]/65 text-sm mt-1">Centro Formación Técnica Santo Tomás</p>
+                </div>
+            </div>
+
+            <h3 class="reveal font-display font-semibold text-xl tracking-tight mt-14 mb-6">Certificaciones</h3>
+            <div class="reveal grid sm:grid-cols-2 gap-3">
+                <div class="flex items-start gap-3 p-4 rounded-lg bg-white border border-[#2D2140]/10">
+                    <i class="fa-solid fa-circle-check text-[#8B5CF6] mt-1"></i>
+                    <div>
+                        <p class="font-medium text-sm">Certificado profesional de Google IT Automatización con Python</p>
+                        <p class="text-[#2D2140]/55 text-xs mt-1">Google · 2026</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 rounded-lg bg-white border border-[#2D2140]/10">
+                    <i class="fa-solid fa-circle-check text-[#8B5CF6] mt-1"></i>
+                    <div>
+                        <p class="font-medium text-sm">Desarrollador Front-end Trainee</p>
+                        <p class="text-[#2D2140]/55 text-xs mt-1">Talento Digital · 2026</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 rounded-lg bg-white border border-[#2D2140]/10">
+                    <i class="fa-solid fa-circle-check text-[#8B5CF6] mt-1"></i>
+                    <div>
+                        <p class="font-medium text-sm">Curso de Inmersión IA + Google Gemini</p>
+                        <p class="text-[#2D2140]/55 text-xs mt-1">Alura Latam · 2025</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 p-4 rounded-lg bg-white border border-[#2D2140]/10">
+                    <i class="fa-solid fa-circle-check text-[#8B5CF6] mt-1"></i>
+                    <div>
+                        <p class="font-medium text-sm">Curso de SEO Internacional</p>
+                        <p class="text-[#2D2140]/55 text-xs mt-1">SEMrush · 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="max-w-5xl mx-auto px-6 pb-24">
+            <div class="reveal rounded-3xl bg-[#2D2140] text-[#FCFAFF] p-10 sm:p-14 text-center">
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight">¿Tienes un proyecto en mente?</h2>
+                <p class="mt-4 text-[#FCFAFF]/65 max-w-xl mx-auto text-lg">Cuéntame qué quieres construir. Te respondo con ideas claras sobre cómo abordarlo.</p>
+                <div class="mt-8 flex flex-wrap justify-center gap-3">
+                    <a href="mailto:javiera.ramirezp.dev@gmail.com" class="px-6 py-3 rounded-lg bg-[#8B5CF6] text-white font-semibold hover:bg-[#7C3AED] transition"><i class="fa-solid fa-envelope mr-2"></i>Escríbeme</a>
+                    <a href="https://www.linkedin.com/in/javieraramirezparraguez/" target="_blank" rel="noopener" class="px-6 py-3 rounded-lg border border-white/20 font-semibold hover:border-[#F472B6] transition"><i class="fa-brands fa-linkedin mr-2"></i>LinkedIn</a>
+                    <a href="https://api.whatsapp.com/send/?phone=56975260688&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="px-6 py-3 rounded-lg border border-white/20 font-semibold hover:border-[#F472B6] transition"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp</a>
+                    <a href="https://github.com/javieraramirezpdev" target="_blank" rel="noopener" class="px-6 py-3 rounded-lg border border-white/20 font-semibold hover:border-[#F472B6] transition"><i class="fa-brands fa-github mr-2"></i>GitHub</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-[#2D2140]/10">
+        <div class="max-w-5xl mx-auto px-6 py-8 text-sm text-[#2D2140]/50 flex flex-col sm:flex-row justify-between gap-2">
+            <span>&copy; 2026 Javiera Ramírez. Todos los derechos reservados.</span>
+            <span>Desarrolladora Frontend · Estudiante de Programación y Análisis de Sistemas</span>
+        </div>
+    </footer>
+
+    <script>
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
+</body>
+</html>
