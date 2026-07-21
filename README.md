@@ -1,112 +1,117 @@
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,100:F472B6&height=220&section=header&text=Javiera%20Ramírez&fontSize=48&fontColor=FCFAFF&animation=fadeIn&fontAlignY=38&desc=Desarrolladora%20Frontend%20%7C%20Estudiante%20de%20Programación%20y%20Análisis%20de%20Sistemas&descSize=18&descAlignY=58" width="100%"/>
-
-<br/>
-
-<a href="https://www.linkedin.com/in/javieraramirezparraguez/">
-  <img src="https://img.shields.io/badge/LinkedIn-2D2140?style=for-the-badge&logo=linkedin&logoColor=FBBF24" />
-</a>
-<a href="https://api.whatsapp.com/send/?phone=56975260688&text&type=phone_number&app_absent=0">
-  <img src="https://img.shields.io/badge/WhatsApp-8B5CF6?style=for-the-badge&logo=whatsapp&logoColor=FCFAFF" />
-</a>
-<a href="mailto:javiera.ramirezp.dev@gmail.com">
-  <img src="https://img.shields.io/badge/Email-F472B6?style=for-the-badge&logo=gmail&logoColor=2D2140" />
-</a>
-<a href="https://github.com/javieraramirezpdev">
-  <img src="https://img.shields.io/badge/GitHub-2D2140?style=for-the-badge&logo=github&logoColor=FBBF24" />
-</a>
-
+  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:2D2140,50:8B5CF6,100:F472B6&height=200&section=header&text=Javiera%20Ramírez&fontSize=42&fontColor=FCFAFF&animation=twinkling&fontAlignY=40" width="100%"/>
 </div>
 
-<br/>
+<table width="100%">
+<tr>
+<td width="65%" valign="top">
 
-## Hola mundo 💜
+# ¡Hola! Soy Javiera 👋
 
-<img align="right" width="270" src="https://readme-typing-svg.demolab.com/?lines=%3C+desarrollo+web+%2F%3E;const+frontend+%3D+%22React%22;interfaces.build().love();console.log(%22hola%20mundo%22);&font=Fira%20Code&size=16&duration=3000&pause=1000&color=8B5CF6&center=false&vCenter=true&width=400&height=100">
+Estudiante de **Programación y Análisis de Sistemas** y desarrolladora frontend en formación, con base en marketing digital.
 
-Soy **Javiera**, estudiante de **Programación y análisis de Sistemas** y desarrolladora frontend en formación.
+Me apasiona construir interfaces dinámicas, pensar en experiencia de usuario y resolver problemas con una mirada analítica. Actualmente en camino hacia el **desarrollo fullstack**, un componente a la vez 💜
 
-Me interesa el desarrollo de software, el análisis de datos y crear interfaces dinámicas y funcionales. Con formación en el área de marketing digital, así que combino pensamiento analítico con mirada de producto y experiencia de usuario.
+</td>
+<td width="35%" valign="top" align="center">
 
-Actualmente explorando el mundo **fullstack**, un componente a la vez.
+<img src="https://readme-typing-svg.demolab.com/?lines=Frontend+Developer;React+%2B+TypeScript;Marketing+%E2%86%92+Code;Aprendiendo+cada+día;&font=Fira+Code&size=15&duration=2800&pause=900&color=F472B6&center=true&vCenter=true&width=280&height=90&background=FCFAFF00">
 
-<br/>
-
-## 🧰 Stack
-
-<div>
-  <img src="https://img.shields.io/badge/HTML5-2D2140?style=for-the-badge&logo=html5&logoColor=FBBF24" />
-  <img src="https://img.shields.io/badge/CSS3-8B5CF6?style=for-the-badge&logo=css3&logoColor=FCFAFF" />
-  <img src="https://img.shields.io/badge/JavaScript-2D2140?style=for-the-badge&logo=javascript&logoColor=FBBF24" />
-  <img src="https://img.shields.io/badge/TypeScript-7C3AED?style=for-the-badge&logo=typescript&logoColor=FCFAFF" />
-  <img src="https://img.shields.io/badge/React-2D2140?style=for-the-badge&logo=react&logoColor=F472B6" />
-  <img src="https://img.shields.io/badge/Python-2D2140?style=for-the-badge&logo=python&logoColor=FBBF24" />
-  <img src="https://img.shields.io/badge/Power_BI-F472B6?style=for-the-badge&logo=powerbi&logoColor=2D2140" />
-</div>
-
-<br/>
-
-## 🌱 Formación & certificaciones
-
-- 🎓 Programación y Análisis de Sistemas — Instituto AIEP *(2026 – en curso)*
-- 🎓 Marketing Digital — Fundación Generation Chile *(2025)*
-- 📜 Certificado Profesional de Google Marketing digital y comercio electrónico — Google *(2026)*
-- 📜 Certificado profesional de Google IT Automatización con Python — Google *(2026)*
-- 📜 Desarrollador Front-end Trainee — Talento Digital *(2026)*
-- 📜 Curso de Inmersión IA + Google Gemini — Alura Latam *(2025)*
-- 📜 Curso de SEO Internacional — SEMrush *(2025)*
-
-<br/>
-
-## 📌 Proyectos destacados
-
-<table>
-  <tr>
-    <td width="50%" valign="top" align="center" style="border: 2px solid #8B5CF6; border-radius: 12px;">
-      <a href="https://github.com/javieraramirezpdev/Bytebook-library">
-        <img src="https://opengraph.githubassets.com/1/javieraramirezpdev/Bytebook-library" width="100%" style="border-radius: 8px;"/>
-      </a>
-      <h3>📚 Bytebook Library</h3>
-      <p>Sistema/plataforma de biblioteca digital.</p>
-      <a href="https://github.com/javieraramirezpdev/Bytebook-library">
-        <img src="https://img.shields.io/badge/Ver_repositorio-7C3AED?style=flat-square&logoColor=FCFAFF" />
-      </a>
-    </td>
-    <td width="50%" valign="top" align="center" style="border: 2px solid #F472B6; border-radius: 12px;">
-      <a href="https://github.com/javieraramirezpdev/Centroholistico-Prananimal">
-        <img src="https://opengraph.githubassets.com/1/javieraramirezpdev/Centroholistico-Prananimal" width="100%" style="border-radius: 8px;"/>
-      </a>
-      <h3>🐾 Centro Holístico Prananimal</h3>
-      <p>Sitio web para un centro holístico animal.</p>
-      <a href="https://github.com/javieraramirezpdev/Centroholistico-Prananimal">
-        <img src="https://img.shields.io/badge/Ver_repositorio-7C3AED?style=flat-square&logoColor=FCFAFF" />
-      </a>
-    </td>
-  </tr>
+</td>
+</tr>
 </table>
 
-> Ve todos mis repositorios en 👉 [github.com/javieraramirezpdev?tab=repositories](https://github.com/javieraramirezpdev?tab=repositories)
-
-<br/>
-
-## 📊 Estadísticas
-
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=javieraramirezpdev&show_icons=true&bg_color=FCFAFF&title_color=8B5CF6&text_color=2D2140&icon_color=F472B6&border_color=8B5CF6&hide_border=false" height="165"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=javieraramirezpdev&background=FCFAFF&stroke=8B5CF6&ring=F472B6&fire=FBBF24&currStreakLabel=8B5CF6&sideLabels=2D2140&dates=2D2140&border=8B5CF6" height="165"/>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-2D2140?style=flat-square&logo=linkedin&logoColor=FBBF24)](https://www.linkedin.com/in/javieraramirezparraguez/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-8B5CF6?style=flat-square&logo=whatsapp&logoColor=FCFAFF)](https://api.whatsapp.com/send/?phone=56975260688&text&type=phone_number&app_absent=0)
+[![Email](https://img.shields.io/badge/Email-F472B6?style=flat-square&logo=gmail&logoColor=2D2140)](mailto:javiera.ramirezp.dev@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-2D2140?style=flat-square&logo=github&logoColor=FBBF24)](https://github.com/javieraramirezpdev)
 
 </div>
 
-<br/>
+---
 
-## 💡 Dato random
-
-Del marketing digital al desarrollo frontend: aportando una visión centrada en el usuario y los objetivos del negocio 🐾💻
-
-<br/>
+### 🧰 Herramientas y lenguajes con los que trabajo
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F472B6,100:8B5CF6&height=100&section=footer" width="100%"/>
+
+![HTML5](https://img.shields.io/badge/HTML5-2D2140?style=for-the-badge&logo=html5&logoColor=FBBF24)
+![CSS3](https://img.shields.io/badge/CSS3-8B5CF6?style=for-the-badge&logo=css3&logoColor=FCFAFF)
+![JavaScript](https://img.shields.io/badge/JavaScript-2D2140?style=for-the-badge&logo=javascript&logoColor=FBBF24)
+![TypeScript](https://img.shields.io/badge/TypeScript-7C3AED?style=for-the-badge&logo=typescript&logoColor=FCFAFF)
+![React](https://img.shields.io/badge/React-2D2140?style=for-the-badge&logo=react&logoColor=F472B6)
+![Python](https://img.shields.io/badge/Python-2D2140?style=for-the-badge&logo=python&logoColor=FBBF24)
+![Power BI](https://img.shields.io/badge/Power_BI-F472B6?style=for-the-badge&logo=powerbi&logoColor=2D2140)
+
+</div>
+
+---
+
+### 🌱 Formación y certificaciones
+
+<details open>
+<summary><b>Ver línea de tiempo</b></summary>
+<br/>
+
+| Año | Detalle |
+|---|---|
+| **2026** — en curso | 🎓 Programación y Análisis de Sistemas, Instituto AIEP |
+| **2026** | 📜 Certificado Profesional de Google: Marketing digital y comercio electrónico |
+| **2026** | 📜 Certificado Profesional de Google: IT Automatización con Python |
+| **2026** | 📜 Desarrolladora Front-end Trainee, Talento Digital |
+| **2025** | 🎓 Marketing Digital, Fundación Generation Chile |
+| **2025** | 📜 Curso de Inmersión IA + Google Gemini, Alura Latam |
+| **2025** | 📜 Curso de SEO Internacional, SEMrush |
+
+</details>
+
+---
+
+### 📌 Proyectos destacados
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**📚 Bytebook Library**
+Sistema/plataforma de biblioteca digital.
+
+[![Ver repositorio](https://img.shields.io/badge/Ver_repositorio-8B5CF6?style=for-the-badge&logoColor=FCFAFF)](https://github.com/javieraramirezpdev/Bytebook-library)
+
+</td>
+<td width="50%" valign="top">
+
+**🐾 Centro Holístico Prananimal**
+Sitio web para un centro holístico animal.
+
+[![Ver repositorio](https://img.shields.io/badge/Ver_repositorio-F472B6?style=for-the-badge&logoColor=2D2140)](https://github.com/javieraramirezpdev/Centroholistico-Prananimal)
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+📂 Revisa todos mis repositorios en [github.com/javieraramirezpdev](https://github.com/javieraramirezpdev?tab=repositories)
+
+</div>
+
+---
+
+### 📊 Actividad
+
+<div align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=javieraramirezpdev&show_icons=true&bg_color=2D2140&title_color=F472B6&text_color=FCFAFF&icon_color=FBBF24&border_color=8B5CF6&hide_border=false" height="160"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=javieraramirezpdev&background=2D2140&stroke=F472B6&ring=8B5CF6&fire=FBBF24&currStreakLabel=FBBF24&sideLabels=FCFAFF&dates=FCFAFF&border=8B5CF6" height="160"/>
+</div>
+
+---
+
+<div align="center">
+
+💭 *Del marketing digital al desarrollo frontend: aportando una visión centrada en el usuario y los objetivos del negocio* 🐾💻
+
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:F472B6,50:8B5CF6,100:2D2140&height=100&section=footer" width="100%"/>
+
 </div>
