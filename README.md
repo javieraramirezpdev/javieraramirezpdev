@@ -3,9 +3,9 @@
 <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&size=22&duration=3000&pause=1200&color=8B5CF6&center=true&vCenter=true&width=440&lines=Frontend+Developer;UX%2FUI+%2B+Marketing+Digital;Del+dato+a+la+interfaz" alt="Typing SVG" />
 
 <p>
-<a href="#"><img src="https://img.shields.io/badge/LinkedIn-8B5CF6?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="#"><img src="https://img.shields.io/badge/WhatsApp-F472B6?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/></a>
-<a href="mailto:javiera.ramirez.mkt@gmail.com"><img src="https://img.shields.io/badge/Email-C4B5FD?style=for-the-badge&logo=gmail&logoColor=black" alt="Email"/></a>
+<a href="LinkedIn"><img src="https://www.linkedin.com/in/javieraramirezparraguez/" alt="LinkedIn"/></a>
+<a href="WhatsApp"><img src="https://api.whatsapp.com/send/?phone=56975260688&text&type=phone_number&app_absent=0" alt="WhatsApp"/></a>
+<a href="mailto:javiera.ramirezp.dev@gmail.com"><img src="https://img.shields.io/badge/Email-C4B5FD?style=for-the-badge&logo=gmail&logoColor=black" alt="Email"/></a>
 <a href="https://github.com/javieraramirezpdev"><img src="https://img.shields.io/badge/GitHub-0F0F14?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 </p>
 </div>
