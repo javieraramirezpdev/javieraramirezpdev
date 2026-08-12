@@ -1,6 +1,3 @@
-<div align="center">
-<img src="assets/foto-perfil.jpg" width="110" height="110" alt="Javiera Ramírez"/>
-
 # Javiera Ramírez
 
 <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&size=22&duration=3000&pause=1200&color=8B5CF6&center=true&vCenter=true&width=440&lines=Frontend+Developer;UX%2FUI+%2B+Marketing+Digital;Del+dato+a+la+interfaz" alt="Typing SVG" />
