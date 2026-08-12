@@ -39,27 +39,6 @@ Estudio Programación y Análisis de Sistemas y me enfoco en frontend y UX/UI, s
 
 ---
 
-### 🎓 Formación y certificaciones
-
-<details open>
-<summary><b>▾ Ver línea de tiempo</b></summary>
-<br>
-
-<table>
-<tr><th align="left">Año</th><th align="left">Detalle</th></tr>
-<tr><td>2026 — en curso</td><td>🎓 Programación y Análisis de Sistemas, Instituto AIEP</td></tr>
-<tr><td>2026</td><td>📜 Certificado Profesional de Google: Marketing digital y comercio electrónico</td></tr>
-<tr><td>2026</td><td>📜 Certificado Profesional de Google: IT Automatización con Python</td></tr>
-<tr><td>2026</td><td>💻 Desarrolladora Front-end Trainee, Talento Digital</td></tr>
-<tr><td>2025</td><td>📈 Marketing Digital, Fundación Generation Chile</td></tr>
-<tr><td>2025</td><td>🤖 Inmersión IA + Google Gemini, Alura Latam</td></tr>
-<tr><td>2025</td><td>🔍 SEO Internacional, SEMrush</td></tr>
-</table>
-
-</details>
-
----
-
 ### 🚀 Proyectos destacados
 
 <table>
@@ -83,8 +62,6 @@ Sitio institucional para un centro holístico animal.
 </tr>
 </table>
 
-<p align="center">📂 Todos mis repositorios en <a href="https://github.com/javieraramirezpdev">github.com/javieraramirezpdev</a></p>
-
 <p align="center">
-💬 Del marketing digital al desarrollo frontend — pensando siempre en el usuario y en el resultado.
+💬 Del marketing digital al desarrollo frontend - pensando siempre en el usuario y en el resultado.
 </p>
