@@ -17,7 +17,7 @@
 
 ### ✦ Sobre mí
 
-No llegué al código por el camino tradicional. Empecé gestionando campañas, métricas y CRM en marketing digital — y esa costumbre de medir, probar y ajustar es la que sigo aplicando ahora que diseño y desarrollo interfaces.
+No llegué al código por el camino tradicional. Empecé gestionando campañas, métricas y CRM en marketing digital - y esa costumbre de medir, probar y ajustar es la que sigo aplicando ahora que diseño y desarrollo interfaces.
 
 Estudio Programación y Análisis de Sistemas y me enfoco en frontend y UX/UI, sin perder de vista que una buena interfaz también tiene que cumplir un objetivo de negocio. Voy camino al desarrollo fullstack, un componente a la vez.
 
