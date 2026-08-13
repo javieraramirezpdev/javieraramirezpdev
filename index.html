@@ -1,799 +1,490 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Javiera Ramírez — Marketing Digital · Diseño · Desarrollo Frontend</title>
-<meta name="description" content="Diseño y desarrollo sitios web que venden. Combino marketing digital, estrategia UX y desarrollo frontend para ayudar a emprendedores, PYMEs y marcas personales a crecer.">
-<meta name="keywords" content="marketing digital, diseño web, desarrollo frontend, landing pages, SEO, CRO, Javiera Ramírez">
-<meta name="author" content="Javiera Ramírez">
-<link rel="canonical" href="https://javieraramirez.dev/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javiera Ramírez · Frontend Developer & UX/UI</title>
+  <meta name="description" content="Portfolio de Javiera Ramírez, Frontend Developer & UX/UI con base en marketing digital y CRM. Desarrollo web, análisis de datos y soluciones digitales orientadas a resultados.">
+  <meta name="theme-color" content="#0F0F14">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Javiera Ramírez — Sitios que venden">
-<meta property="og:description" content="Marketing digital + diseño UX/UI + desarrollo frontend, en una sola persona. Estrategia, diseño y código para negocios que quieren crecer.">
-<meta property="og:image" content="https://javieraramirez.dev/og-cover.jpg">
-<meta property="og:url" content="https://javieraramirez.dev/">
-<meta property="og:locale" content="es_CL">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Javiera Ramírez — Sitios que venden">
-<meta name="twitter:description" content="Marketing digital + diseño UX/UI + desarrollo frontend, en una sola persona.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Javiera Ramírez · Frontend Developer & UX/UI">
+  <meta property="og:description" content="Portfolio de Javiera Ramírez, Frontend Developer & UX/UI con base en marketing digital y CRM. Desarrollo web, análisis de datos y soluciones digitales orientadas a resultados.">
+  <meta property="og:type" content="website">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ink: '#16121F',
-          inksoft: '#4A4358',
-          bg: '#FFFFFF',
-          bgsoft: '#FAF9FC',
-          line: '#EBE6F5',
-          lilac: '#C9BFF0',
-          purple: '#7B5CFA',
-          purpledeep: '#5B3DE0',
-          pink: '#F582AE',
-        },
-        fontFamily: {
-          display: ['Sora', 'sans-serif'],
-          body: ['Inter', 'sans-serif'],
-          mono: ['JetBrains Mono', 'monospace'],
-        },
-      }
-    }
-  }
-</script>
+  <link rel="stylesheet" href="style.css">
 
-<style>
-  :root{
-    --grad: linear-gradient(135deg, #7B5CFA 0%, #F582AE 100%);
-  }
-  html{scroll-behavior:smooth;}
-  body{font-family:'Inter',sans-serif; color:#16121F; background:#FFFFFF;}
-  h1,h2,h3,h4,.font-display{font-family:'Sora',sans-serif;}
-
-  ::selection{background:#7B5CFA; color:#fff;}
-
-  /* focus visibility */
-  a:focus-visible, button:focus-visible, input:focus-visible{
-    outline:2px solid #7B5CFA; outline-offset:3px; border-radius:4px;
-  }
-
-  .grad-text{
-    background:var(--grad);
-    -webkit-background-clip:text; background-clip:text; color:transparent;
-  }
-  .grad-border{
-    position:relative; border:1px solid transparent; background-clip:padding-box;
-  }
-  .grad-border::before{
-    content:''; position:absolute; inset:0; border-radius:inherit; padding:1px;
-    background:var(--grad);
-    -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite:xor; mask-composite:exclude;
-    pointer-events:none;
-  }
-
-  .card-hover{transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1), border-color .35s;}
-  .card-hover:hover{transform:translateY(-6px); box-shadow:0 24px 48px -20px rgba(91,61,224,.25);}
-
-  /* scroll reveal */
-  .reveal{opacity:0; transform:translateY(28px); transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);}
-  .reveal.in{opacity:1; transform:translateY(0);}
-  .reveal-delay-1{transition-delay:.08s;}
-  .reveal-delay-2{transition-delay:.16s;}
-  .reveal-delay-3{transition-delay:.24s;}
-  .reveal-delay-4{transition-delay:.32s;}
-
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    .reveal{opacity:1; transform:none; transition:none;}
-    .card-hover{transition:none;}
-    .card-hover:hover{transform:none;}
-  }
-
-  /* nav */
-  .nav-link{position:relative;}
-  .nav-link::after{
-    content:''; position:absolute; left:0; bottom:-6px; width:0; height:2px;
-    background:var(--grad); transition:width .3s ease;
-  }
-  .nav-link:hover::after{width:100%;}
-
-  /* hero search */
-  .search-glow{
-    box-shadow:0 0 0 1px #EBE6F5, 0 20px 60px -25px rgba(123,92,250,.35);
-    transition:box-shadow .35s ease;
-  }
-  .search-glow:focus-within{
-    box-shadow:0 0 0 2px #7B5CFA, 0 25px 70px -20px rgba(123,92,250,.45);
-  }
-  #typed-cursor{animation:blink 1s step-end infinite;}
-  @keyframes blink{50%{opacity:0;}}
-
-  /* mobile menu */
-  #mobile-menu{
-    transform:translateY(-8px); opacity:0; pointer-events:none;
-    transition:opacity .28s ease, transform .28s ease;
-  }
-  #mobile-menu.open{transform:translateY(0); opacity:1; pointer-events:auto;}
-
-  .hamburger span{transition:transform .3s ease, opacity .3s ease;}
-  .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
-  .hamburger.open span:nth-child(2){opacity:0;}
-  .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-
-  /* browser mock */
-  .browser-mock{border:1px solid #EBE6F5; border-radius:12px; overflow:hidden; background:#fff;}
-  .browser-bar{background:#FAF9FC; border-bottom:1px solid #EBE6F5;}
-  .dot{width:8px; height:8px; border-radius:50%;}
-
-  .chip{transition:all .25s ease;}
-  .chip:hover{background:#16121F; color:#fff; border-color:#16121F;}
-
-  .step-card{transition:box-shadow .3s ease, transform .3s ease;}
-  .step-card:hover{transform:translateY(-4px);}
-
-  .counter{font-variant-numeric:tabular-nums;}
-
-  /* subtle bg texture */
-  .noise-grid{
-    background-image:
-      linear-gradient(#EBE6F5 1px, transparent 1px),
-      linear-gradient(90deg, #EBE6F5 1px, transparent 1px);
-    background-size:64px 64px;
-  }
-
-  .marquee-track{
-    display:flex; width:max-content;
-    animation:marquee 28s linear infinite;
-  }
-  @keyframes marquee{
-    from{transform:translateX(0);}
-    to{transform:translateX(-50%);}
-  }
-</style>
+  <!-- Favicon (inline SVG, no external file needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23C4B5FD'/%3E%3Cstop offset='1' stop-color='%23F472B6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230F0F14'/%3E%3Ctext x='50' y='68' font-size='58' font-family='monospace' font-weight='700' fill='url(%23g)' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
 </head>
+<body>
 
-<body class="bg-white text-ink antialiased">
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#top" class="logo">Javiera<span class="logo-dot">.</span></a>
 
-<!-- ============ NAVBAR ============ -->
-<header class="fixed top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-md border-b border-line">
-  <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[76px] flex items-center justify-between" aria-label="Navegación principal">
-
-    <!-- Logo left -->
-    <a href="#top" class="flex items-center gap-2.5 shrink-0" aria-label="Ir al inicio">
-      <span class="relative w-9 h-9 rounded-[10px] grid place-items-center" style="background:var(--grad);">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M4 17L10 4" stroke="white" stroke-width="2" stroke-linecap="round"/>
-          <path d="M14 4L20 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="12" cy="19.5" r="1.6" fill="white"/>
-        </svg>
-      </span>
-      <span class="font-display font-bold text-[17px] tracking-tight leading-none">
-        Javiera Ramírez
-        <span class="block font-body font-normal text-[10.5px] tracking-[0.14em] uppercase text-inksoft mt-0.5">Marketing · Diseño · Dev</span>
-      </span>
-    </a>
-
-    <!-- Desktop links -->
-    <ul class="hidden lg:flex items-center gap-9 font-medium text-[14.5px] text-ink">
-      <li><a href="#combinacion" class="nav-link">Estrategia híbrida</a></li>
-      <li><a href="#servicios" class="nav-link">Servicios</a></li>
-      <li><a href="#casos" class="nav-link">Resultados</a></li>
-      <li><a href="#proceso" class="nav-link">Proceso</a></li>
-      <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-      <li><a href="#formacion" class="nav-link">Formación</a></li>
-      <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
-    </ul>
-
-    <div class="hidden lg:flex items-center gap-4">
-      <a href="#contacto" class="text-[14.5px] font-medium text-inksoft hover:text-ink transition-colors">Contacto</a>
-      <a href="#contacto" class="inline-flex items-center gap-2 text-white text-[14.5px] font-semibold px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity" style="background:var(--grad);">
-        Contáctame
-        <i class="fa-solid fa-arrow-right text-[12px]"></i>
-      </a>
-    </div>
-
-    <!-- Responsive -->
-    <button id="hamburger-btn" class="hamburger lg:hidden relative w-9 h-9 flex flex-col justify-center items-center gap-[6px]" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
-      <span class="block w-6 h-[2px] bg-ink rounded-full"></span>
-      <span class="block w-6 h-[2px] bg-ink rounded-full"></span>
-      <span class="block w-6 h-[2px] bg-ink rounded-full"></span>
-    </button>
-  </nav>
-
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="lg:hidden absolute top-[76px] inset-x-0 bg-white border-b border-line shadow-xl">
-    <ul class="flex flex-col px-6 py-6 gap-1 font-medium text-[16px]">
-      <li><a href="#estrategiahibrida" class="mobile-link block py-3 border-b border-line">Estrategia híbrida</a></li>
-      <li><a href="#servicios" class="mobile-link block py-3 border-b border-line">Servicios</a></li>
-      <li><a href="#casos" class="mobile-link block py-3 border-b border-line">Resultados</a></li>
-      <li><a href="#proceso" class="mobile-link block py-3 border-b border-line">Proceso</a></li>
-      <li><a href="#proyectos" class="mobile-link block py-3 border-b border-line">Proyectos</a></li>
-      <li><a href="#formacion" class="mobile-link block py-3 border-b border-line">Formación</a></li>
-      <li><a href="#experiencia" class="mobile-link block py-3 border-b border-line">Experiencia</a></li>
-      <li><a href="#contacto" class="mobile-link block py-3">Contacto</a></li>
-    </ul>
-    <div class="px-6 pb-6">
-      <a href="#contacto" class="mobile-link flex items-center justify-center gap-2 text-white font-semibold px-5 py-3.5 rounded-full" style="background:var(--grad);">
-        Contáctame <i class="fa-solid fa-arrow-right text-[12px]"></i>
-      </a>
-    </div>
-  </div>
-</header>
-
-<main id="top">
-
-<!-- ============ HERO ============ -->
-<section class="relative pt-[150px] pb-24 px-5 sm:px-8 overflow-hidden noise-grid">
-  <div class="pointer-events-none absolute -top-40 right-[-10%] w-[560px] h-[560px] rounded-full opacity-25 blur-3xl" style="background:var(--grad);"></div>
-
-  <div class="max-w-4xl mx-auto text-center relative">
-    <div class="reveal in inline-flex items-center gap-2 border border-line rounded-full px-4 py-1.5 text-[13px] font-medium text-inksoft mb-8">
-      <span class="w-1.5 h-1.5 rounded-full" style="background:var(--grad);"></span>
-      Marketing Digital · UX/UI · Desarrollo Frontend
-    </div>
-
-    <h1 class="reveal in font-display font-extrabold text-[38px] leading-[1.12] sm:text-[52px] sm:leading-[1.1] lg:text-[64px] lg:leading-[1.06] tracking-tight text-ink">
-      Un sitio bonito no vende.<br class="hidden sm:block">
-      Uno pensado para <span class="grad-text">convertir</span>, sí.
-    </h1>
-
-    <p class="reveal in reveal-delay-1 mt-6 text-[17px] sm:text-[19px] text-inksoft max-w-2xl mx-auto leading-relaxed">
-      Ayudo a marcas y negocios a transformar sus ideas en experiencias digitales: desde la estrategia de marketing hasta el diseño y desarrollo de sitios web funcionales, atractivos y pensados para sus clientes.
-    </p>
-
-    <!-- Signature: business-need search -->
-    <div class="reveal in reveal-delay-2 mt-11 max-w-xl mx-auto">
-      <label for="need-input" class="sr-only">¿Qué necesita tu negocio?</label>
-      <div class="search-glow flex items-center gap-3 bg-white rounded-2xl px-5 py-4 border border-line">
-        <i class="fa-solid fa-magnifying-glass text-inksoft text-[15px]"></i>
-        <div class="flex-1 text-left font-mono text-[15px] text-ink overflow-hidden whitespace-nowrap">
-          <span class="text-inksoft">Mi negocio necesita&nbsp;</span><span id="typed-text"></span><span id="typed-cursor" class="text-purple">|</span>
-        </div>
-        <kbd class="hidden sm:inline text-[11px] font-mono text-inksoft border border-line rounded-md px-2 py-1">Enter ↵</kbd>
-      </div>
-      <div class="mt-4 flex flex-wrap justify-center gap-2">
-        <button type="button" class="need-chip chip text-[13px] font-medium border border-line rounded-full px-4 py-1.5">SEO</button>
-        <button type="button" class="need-chip chip text-[13px] font-medium border border-line rounded-full px-4 py-1.5">Landing Page</button>
-        <button type="button" class="need-chip chip text-[13px] font-medium border border-line rounded-full px-4 py-1.5">CRO</button>
-        <button type="button" class="need-chip chip text-[13px] font-medium border border-line rounded-full px-4 py-1.5">Estrategia digital</button>
-        <button type="button" class="need-chip chip text-[13px] font-medium border border-line rounded-full px-4 py-1.5">Google Ads</button>
-      </div>
-    </div>
-
-    <div class="reveal in reveal-delay-3 mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="#contacto" class="w-full sm:w-auto text-center text-white font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity" style="background:var(--grad);">
-        Convirtamos tu idea en un negocio digital
-      </a>
-      <a href="#proyectos" class="w-full sm:w-auto text-center font-semibold px-7 py-3.5 rounded-full border border-line hover:border-ink transition-colors">
-        Ver proyectos
-      </a>
-    </div>
-  </div>
-
-  <!-- stats strip -->
-  <div class="reveal in reveal-delay-4 mt-20 max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-4 border-t border-line pt-10">
-    <div class="text-center">
-      <p class="font-display font-extrabold text-[30px] sm:text-[34px] grad-text"><span class="counter" data-target="20" data-suffix="%">0%</span></p>
-      <p class="text-[13px] text-inksoft mt-1">Incremento de leads</p>
-    </div>
-    <div class="text-center">
-      <p class="font-display font-extrabold text-[30px] sm:text-[34px] grad-text"><span class="counter" data-target="60" data-suffix="">0</span></p>
-      <p class="text-[13px] text-inksoft mt-1">Leads generados</p>
-    </div>
-    <div class="text-center">
-      <p class="font-display font-extrabold text-[30px] sm:text-[34px] grad-text"><span class="counter" data-target="10.2" data-suffix="K" data-decimal="true">0K</span></p>
-      <p class="text-[13px] text-inksoft mt-1">Visualizaciones</p>
-    </div>
-    <div class="text-center">
-      <p class="font-display font-extrabold text-[30px] sm:text-[34px] grad-text">+<span class="counter" data-target="155" data-suffix="">0</span></p>
-      <p class="text-[13px] text-inksoft mt-1">Nuevos seguidores</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ LA COMBINACIÓN ============ -->
-<section id="combinacion" class="py-24 px-5 sm:px-8 bg-bgsoft border-y border-line">
-  <div class="max-w-6xl mx-auto">
-    <div class="reveal max-w-2xl mb-16">
-      <span class="text-[13px] font-semibold tracking-[0.14em] uppercase text-purple">Por qué soy distinta</span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] leading-tight mt-3">Estrategia, diseño y desarrollo trabajando juntos</h2>
-      <p class="text-inksoft mt-4 text-[16px] leading-relaxed">Contratas a alguien que entiende cómo esas tres cosas se conectan — porque un sitio solo vende cuando la estrategia, el diseño y el código trabajan para el mismo objetivo.</p>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="reveal card-hover bg-white border border-line rounded-2xl p-8">
-        <div class="w-12 h-12 rounded-xl grid place-items-center mb-6 bg-purple/10">
-          <i class="fa-solid fa-chart-line text-purple text-lg"></i>
-        </div>
-        <h3 class="font-display font-semibold text-[19px] mb-2">Estrategia de marketing</h3>
-        <p class="text-inksoft text-[15px] leading-relaxed">Entiendo a quién le hablas, qué busca en Google y por qué elegiría tu negocio. Sin esto, el diseño más bonito no convierte a nadie.</p>
-      </div>
-      <div class="reveal reveal-delay-1 card-hover bg-white border border-line rounded-2xl p-8">
-        <div class="w-12 h-12 rounded-xl grid place-items-center mb-6 bg-pink/10">
-          <i class="fa-solid fa-layer-group text-pink text-lg"></i>
-        </div>
-        <h3 class="font-display font-semibold text-[19px] mb-2">Diseño UX/UI</h3>
-        <p class="text-inksoft text-[15px] leading-relaxed">Diseño cada pantalla pensando en la decisión que la persona debe tomar en ese momento: leer, confiar, avanzar, comprar.</p>
-      </div>
-      <div class="reveal reveal-delay-2 card-hover bg-white border border-line rounded-2xl p-8">
-        <div class="w-12 h-12 rounded-xl grid place-items-center mb-6 bg-lilac/30">
-          <i class="fa-solid fa-code text-purpledeep text-lg"></i>
-        </div>
-        <h3 class="font-display font-semibold text-[19px] mb-2">Desarrollo frontend</h3>
-        <p class="text-inksoft text-[15px] leading-relaxed">Construyo lo diseñado sin perder velocidad, sin perder SEO técnico y sin depender de otra persona para lanzarlo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SERVICIOS ============ -->
-<section id="servicios" class="py-24 px-5 sm:px-8">
-  <div class="max-w-6xl mx-auto">
-    <div class="reveal max-w-2xl mb-14">
-      <span class="text-[13px] font-semibold tracking-[0.14em] uppercase text-purple">Servicios</span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] leading-tight mt-3">Cada servicio existe para un solo objetivo: que vendas más.</h2>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="services-grid"></div>
-  </div>
-</section>
-
-<!-- ============ CASOS DE ÉXITO ============ -->
-<section id="casos" class="py-24 px-5 sm:px-8 bg-ink text-white relative overflow-hidden">
-  <div class="pointer-events-none absolute -bottom-32 left-[-10%] w-[500px] h-[500px] rounded-full opacity-20 blur-3xl" style="background:var(--grad);"></div>
-  <div class="max-w-6xl mx-auto relative">
-    <div class="reveal max-w-2xl mb-14">
-      <span class="text-[13px] font-semibold tracking-[0.14em] uppercase text-lilac">Resultados reales</span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] leading-tight mt-3">Cada proyecto se mide por el impacto que genera.</h2>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="reveal grad-border rounded-2xl p-7 bg-white/5">
-        <p class="font-display font-extrabold text-[38px] grad-text">+20%</p>
-        <p class="text-white/70 text-[14px] mt-2">Incremento de leads en una landing page tras optimizar UX y contenido — MG Motor Chile.</p>
-      </div>
-      <div class="reveal reveal-delay-1 grad-border rounded-2xl p-7 bg-white/5">
-        <p class="font-display font-extrabold text-[38px] grad-text">60</p>
-        <p class="text-white/70 text-[14px] mt-2">Leads generados en campaña de branding y landing page — Generation Chile.</p>
-      </div>
-      <div class="reveal reveal-delay-2 grad-border rounded-2xl p-7 bg-white/5">
-        <p class="font-display font-extrabold text-[38px] grad-text">10.2K</p>
-        <p class="text-white/70 text-[14px] mt-2">Visualizaciones alcanzadas con estrategia de marketing orgánico y storytelling.</p>
-      </div>
-      <div class="reveal reveal-delay-3 grad-border rounded-2xl p-7 bg-white/5">
-        <p class="font-display font-extrabold text-[38px] grad-text">+155</p>
-        <p class="text-white/70 text-[14px] mt-2">Nuevos seguidores producto de segmentación y marketing orgánico bien dirigido.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PROCESO ============ -->
-<section id="proceso" class="py-24 px-5 sm:px-8 bg-bgsoft border-y border-line">
-  <div class="max-w-6xl mx-auto">
-    <div class="reveal max-w-2xl mb-14">
-      <span class="text-[13px] font-semibold tracking-[0.14em] uppercase text-purple">Cómo trabajo</span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] leading-tight mt-3">De la idea a un negocio funcionando en internet.</h2>
-      <p class="text-inksoft mt-4 text-[16px] leading-relaxed">Cuatro etapas, diez movimientos. Nada se lanza sin haber sido investigado, diseñado y medido.</p>
-    </div>
-
-    <div class="grid md:grid-cols-4 gap-5">
-
-      <div class="reveal step-card bg-white border border-line rounded-2xl p-7">
-        <span class="text-[13px] font-mono text-purple">Etapa 1</span>
-        <h3 class="font-display font-semibold text-[19px] mt-2 mb-4">Investigar</h3>
-        <ul class="space-y-2 text-[14px] text-inksoft">
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple text-[11px]"></i>Descubrimiento</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple text-[11px]"></i>Investigación</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple text-[11px]"></i>Estrategia</li>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#skills">Skills</a></li>
         </ul>
+
+        <a href="#contacto" class="btn btn-primary nav-cta">Contáctame <span class="arrow">↗</span></a>
       </div>
 
-      <div class="reveal reveal-delay-1 step-card bg-white border border-line rounded-2xl p-7">
-        <span class="text-[13px] font-mono text-purple">Etapa 2</span>
-        <h3 class="font-display font-semibold text-[19px] mt-2 mb-4">Diseñar</h3>
-        <ul class="space-y-2 text-[14px] text-inksoft">
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple text-[11px]"></i>UX</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple text-[11px]"></i>UI</li>
-        </ul>
-      </div>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-      <div class="reveal reveal-delay-2 step-card bg-white border border-line rounded-2xl p-7">
-        <span class="text-[13px] font-mono text-purple">Etapa 3</span>
-        <h3 class="font-display font-semibold text-[19px] mt-2 mb-4">Construir</h3>
-        <ul class="space-y-2 text-[14px] text-inksoft">
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple text-[11px]"></i>Desarrollo</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple text-[11px]"></i>SEO</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple text-[11px]"></i>Optimización</li>
-        </ul>
-      </div>
+  <main id="top">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
 
-      <div class="reveal reveal-delay-3 step-card bg-white border border-line rounded-2xl p-7">
-        <span class="text-[13px] font-mono text-purple">Etapa 4</span>
-        <h3 class="font-display font-semibold text-[19px] mt-2 mb-4">Crecer</h3>
-        <ul class="space-y-2 text-[14px] text-inksoft">
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple text-[11px]"></i>Lanzamiento</li>
-          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple text-[11px]"></i>Mejora continua</li>
-        </ul>
-      </div>
+      <div class="hero-container">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Hola, soy Javiera</p>
+          <h1 class="hero-title">
+            <span class="gradient-text">Frontend Developer</span> +<br>
+            Creative Mind.
+          </h1>
+          <p class="hero-description">
+            Diseño y desarrollo interfaces web funcionales y atractivas, con una base sólida en marketing digital, CRM y análisis de datos que me permite pensar en producto, no solo en pantallas.
+          </p>
 
-    </div>
-  </div>
-</section>
-
-<!-- ============ PROYECTOS ============ -->
-<section id="proyectos" class="py-24 px-5 sm:px-8">
-  <div class="max-w-6xl mx-auto">
-    <div class="reveal max-w-2xl mb-14">
-      <span class="text-[13px] font-semibold tracking-[0.14em] uppercase text-purple">Casos de estudio</span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] leading-tight mt-3">Proyectos destacados</h2>
-    </div>
-
-    <div class="grid lg:grid-cols-2 gap-7">
-
-      <!-- Proyecto 1 -->
-      <article class="reveal card-hover bg-white border border-line rounded-2xl overflow-hidden">
-        <div class="browser-mock m-5 mb-0">
-          <div class="browser-bar flex items-center gap-1.5 px-3.5 py-2.5">
-            <span class="dot bg-[#F582AE]"></span><span class="dot bg-[#F5D76E]"></span><span class="dot bg-[#8FD9A8]"></span>
-            <span class="ml-3 text-[11px] font-mono text-inksoft truncate">bytebook-library.app</span>
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos <span class="arrow">↗</span></a>
+            <a href="#contacto" class="btn btn-secondary">Contactarme</a>
           </div>
-          <div class="h-52 sm:h-60 flex items-center justify-center" style="background:linear-gradient(135deg,#EFE9FD,#FDEBF2);">
-            <i class="fa-solid fa-book-open text-purple text-5xl opacity-70"></i>
-          </div>
-        </div>
-        <div class="p-7">
-          <span class="text-[12px] font-mono text-purple uppercase tracking-wide">Aplicación Frontend</span>
-          <h3 class="font-display font-bold text-[22px] mt-2 mb-3">ByteBook Library</h3>
-          <p class="text-inksoft text-[14.5px] leading-relaxed mb-3"><span class="font-semibold text-ink">El problema:</span> gestionar una colección de libros sin una interfaz clara para buscar, ordenar y organizar títulos.</p>
-          <p class="text-inksoft text-[14.5px] leading-relaxed mb-4"><span class="font-semibold text-ink">Mi aporte:</span> diseño y desarrollo completo del frontend, con una interfaz simple orientada a la gestión rápida de la biblioteca.</p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="text-[12px] font-medium border border-line rounded-full px-3 py-1">HTML5</span>
-            <span class="text-[12px] font-medium border border-line rounded-full px-3 py-1">CSS3</span>
-            <span class="text-[12px] font-medium border border-line rounded-full px-3 py-1">JavaScript</span>
-          </div>
-          <div class="flex flex-wrap gap-3">
-            <a href="https://github.com/javieraramirezpdev/Bytebook-library" target="_blank" rel="noopener" class="flex items-center gap-2 text-[14px] font-semibold border border-line rounded-full px-5 py-2.5 hover:border-ink transition-colors">
-              <i class="fa-solid fa-eye text-[13px]"></i> Ver proyecto
+
+          <div class="hero-socials">
+            <!-- PLACEHOLDER: reemplaza estos enlaces por tus redes reales -->
+            <a href="https://github.com/javieraramirezpdev" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub de Javiera">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.5 0 12.3c0 5.43 3.44 10.03 8.2 11.65.6.11.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.66-4.04-1.66-.55-1.43-1.34-1.82-1.34-1.82-1.1-.77.08-.75.08-.75 1.21.09 1.85 1.27 1.85 1.27 1.08 1.9 2.83 1.35 3.52 1.03.11-.8.42-1.35.76-1.66-2.67-.31-5.47-1.37-5.47-6.1 0-1.35.47-2.45 1.24-3.31-.12-.31-.54-1.57.12-3.28 0 0 1.01-.33 3.3 1.27a11.2 11.2 0 0 1 6.02 0c2.29-1.6 3.3-1.27 3.3-1.27.66 1.71.24 2.97.12 3.28.77.86 1.24 1.96 1.24 3.31 0 4.74-2.81 5.79-5.48 6.09.43.38.81 1.14.81 2.3 0 1.66-.02 3-.02 3.41 0 .33.22.72.83.6C20.57 22.32 24 17.73 24 12.3 24 5.5 18.63 0 12 0Z"/></svg>
             </a>
-            <a href="https://github.com/javieraramirezpdev/Bytebook-library" target="_blank" rel="noopener" class="flex items-center gap-2 text-[14px] font-semibold text-white rounded-full px-5 py-2.5 hover:opacity-90 transition-opacity" style="background:var(--grad);">
-              <i class="fa-brands fa-github text-[14px]"></i> GitHub
+            <a href="https://www.linkedin.com/in/javieraramirezparraguez/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn de Javiera (PLACEHOLDER)">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a href="https://wa.me/56975260688" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp de Javiera (PLACEHOLDER: reemplaza el número)">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12.04 0C5.44 0 .07 5.36.07 11.97c0 2.1.55 4.16 1.6 5.98L0 24l6.19-1.62a11.9 11.9 0 0 0 5.85 1.49h.01c6.6 0 11.97-5.36 11.97-11.97 0-3.2-1.24-6.2-3.5-8.46A11.9 11.9 0 0 0 12.04 0Zm0 21.8h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.68.96.98-3.58-.23-.37a9.8 9.8 0 0 1-1.5-5.26c0-5.42 4.41-9.83 9.84-9.83 2.63 0 5.1 1.02 6.96 2.88a9.78 9.78 0 0 1 2.88 6.96c0 5.42-4.41 9.82-9.88 9.82Zm5.4-7.37c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.5-.17 0-.37-.03-.57-.03-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.75-.71 2-1.4.24-.68.24-1.27.17-1.4-.07-.12-.27-.2-.57-.35Z"/></svg>
             </a>
           </div>
         </div>
-      </article>
 
-      <!-- Proyecto 2 -->
-      <article class="reveal reveal-delay-1 card-hover bg-white border border-line rounded-2xl overflow-hidden">
-        <div class="browser-mock m-5 mb-0">
-          <div class="browser-bar flex items-center gap-1.5 px-3.5 py-2.5">
-            <span class="dot bg-[#F582AE]"></span><span class="dot bg-[#F5D76E]"></span><span class="dot bg-[#8FD9A8]"></span>
-            <span class="ml-3 text-[11px] font-mono text-inksoft truncate">centroholisticoprananimal.cl</span>
+        <div class="hero-visual reveal">
+          <div class="code-card">
+            <div class="code-card-glow" aria-hidden="true"></div>
+            <div class="code-card-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="code-card-filename">developer.js</span>
+            </div>
+            <pre class="code-card-body"><code><span class="c-kw">const</span> <span class="c-var">developer</span> = {
+  <span class="c-key">name</span>: <span class="c-str">"Javiera"</span>,
+  <span class="c-key">role</span>: <span class="c-str">"Frontend Developer"</span>,
+  <span class="c-key">stack</span>: [
+    <span class="c-str">"HTML"</span>,
+    <span class="c-str">"CSS"</span>,
+    <span class="c-str">"JavaScript"</span>,
+    <span class="c-str">"React"</span>
+  ],
+  <span class="c-key">focus</span>: <span class="c-str">"UX + performance"</span>,
+  <span class="c-key">learning</span>: <span class="c-bool">true</span>
+};</code></pre>
           </div>
-          <div class="h-52 sm:h-60 flex items-center justify-center" style="background:linear-gradient(135deg,#FDEBF2,#F0E9FB);">
-            <i class="fa-solid fa-paw text-pink text-5xl opacity-70"></i>
+
+          <div class="float-chip chip-1">⚛ React</div>
+          <div class="float-chip chip-2">✦ UI/UX</div>
+
+          <div class="profile-orb">
+            <img src="img/javi.jpg" alt="Javiera Ramírez, Frontend Developer" loading="lazy">
           </div>
         </div>
-        <div class="p-7">
-          <span class="text-[12px] font-mono text-purple uppercase tracking-wide">Landing Page</span>
-          <h3 class="font-display font-bold text-[22px] mt-2 mb-3">Centro Holístico Prananimal</h3>
-          <p class="text-inksoft text-[14.5px] leading-relaxed mb-3"><span class="font-semibold text-ink">El problema:</span> un centro de bienestar animal sin presencia digital capaz de captar y convertir nuevos clientes.</p>
-          <p class="text-inksoft text-[14.5px] leading-relaxed mb-4"><span class="font-semibold text-ink">Mi aporte:</span> landing page orientada a conversión, con estructura pensada para generar contacto directo con potenciales clientes.</p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="text-[12px] font-medium border border-line rounded-full px-3 py-1">HTML5</span>
-            <span class="text-[12px] font-medium border border-line rounded-full px-3 py-1">CSS3</span>
-            <span class="text-[12px] font-medium border border-line rounded-full px-3 py-1">JavaScript</span>
+      </div>
+
+      <!-- ===== STATS (estilo big number + label) ===== -->
+      <div class="stats-bar reveal">
+        <div class="stat">
+          <span class="stat-number">+20<span class="stat-unit">%</span></span>
+          <span class="stat-label">Leads generados en landing page (MG Motor)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Prácticas profesionales</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">11+</span>
+          <span class="stat-label">Repositorios en GitHub</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100<span class="stat-unit">%</span></span>
+          <span class="stat-label">Responsive</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICIOS ================= -->
+    <section class="services" id="servicios">
+      <div class="section-container">
+        <p class="eyebrow center">Lo que hago</p>
+        <h2 class="section-title center">Mis servicios</h2>
+        <p class="section-subtitle center">Soluciones digitales pensadas para verse bien, funcionar mejor y conectar con las personas.</p>
+
+        <div class="services-list reveal">
+          <div class="service-row service-featured">
+            <span class="service-number">01</span>
+            <div class="service-content">
+              <h3>Desarrollo Web</h3>
+              <p>HTML, CSS, JavaScript, React, interfaces responsive.</p>
+            </div>
+            <span class="service-arrow">↗</span>
           </div>
-          <div class="flex flex-wrap gap-3">
-            <a href="https://github.com/javieraramirezpdev/Centroholistico-Prananimal" target="_blank" rel="noopener" class="flex items-center gap-2 text-[14px] font-semibold border border-line rounded-full px-5 py-2.5 hover:border-ink transition-colors">
-              <i class="fa-solid fa-eye text-[13px]"></i> Ver proyecto
+
+          <div class="service-row">
+            <span class="service-number">02</span>
+            <div class="service-content">
+              <h3>UI / UX</h3>
+              <p>Diseño de interfaces intuitivas y centradas en el usuario.</p>
+            </div>
+            <span class="service-arrow">↗</span>
+          </div>
+
+          <div class="service-row">
+            <span class="service-number">03</span>
+            <div class="service-content">
+              <h3>Marketing Digital</h3>
+              <p>Contenido, SEO, CRM, paid media y estrategia digital.</p>
+            </div>
+            <span class="service-arrow">↗</span>
+          </div>
+
+          <div class="service-row">
+            <span class="service-number">04</span>
+            <div class="service-content">
+              <h3>Analítica &amp; Optimización</h3>
+              <p>Métricas, análisis y optimización de experiencias digitales.</p>
+            </div>
+            <span class="service-arrow">↗</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCIA ================= -->
+    <section class="experience" id="experiencia">
+      <div class="section-container">
+        <p class="eyebrow center">Trayectoria</p>
+        <h2 class="section-title center">Experiencia profesional</h2>
+        <p class="section-subtitle center">De marketing digital a desarrollo frontend: llevo la misma orientación a resultados a cada proyecto.</p>
+
+        <div class="timeline reveal">
+
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>MG Motor Chile</h3>
+                  <p class="timeline-role">Marketing Digital &amp; CRM</p>
+                </div>
+                <span class="timeline-date">Dic 2025 - May 2026</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Optimicé el contenido y la experiencia UX de una landing page para un concurso de marca, generando un <strong>+20% en leads</strong>.</li>
+                <li>Gestioné el CRM (<strong>Salesforce</strong> y <strong>Zoho</strong>), apoyando el seguimiento y organización de leads comerciales.</li>
+                <li>Analicé métricas de campañas digitales (engagement, alcance, tráfico) para aportar insumos a los reportes de desempeño.</li>
+                <li>Diseñé gráficas para newsletters y piezas de comunicación interna.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Salesforce</span><span>Zoho CRM</span><span>UX</span><span>Meta Business Suite</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Generation Chile</h3>
+                  <p class="timeline-role">Marketing Digital · Proyecto Startup Path</p>
+                </div>
+                <span class="timeline-date">Jun - Ago 2025</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Diseñé marca y estrategia digital para una startup enfocada en emprendedores jóvenes.</li>
+                <li>Construí junto a mi equipo una landing page en <strong>WordPress</strong> con formulario para la entrega de un ebook gratuito.</li>
+                <li>Coordiné la publicación de contenido con enfoque en storytelling y segmenté al cliente objetivo.</li>
+                <li>Resultado: <strong>+155 seguidores</strong>, <strong>10.2K visualizaciones</strong> y <strong>60 leads calificados</strong> de forma orgánica en un mes.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>WordPress</span><span>Meta Business Suite</span><span>Branding</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Clínica Veterinaria SocialVet</h3>
+                  <p class="timeline-role">Community Manager</p>
+                </div>
+                <span class="timeline-date">Oct 2024 - Abr 2025</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Gestioné redes sociales (Instagram y Facebook) y produje contenido audiovisual con CapCut y Canva.</li>
+                <li>Diseñé protocolos de comunicación interna y campañas educativas para la comunidad.</li>
+                <li>Fortalecí la identidad digital de la clínica y mejoré la fidelización de clientes con contenido personalizado.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Canva</span><span>CapCut</span><span>Instagram</span><span>Facebook</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="edu-grid reveal">
+          <div class="edu-block">
+            <p class="eyebrow">Educación</p>
+            <ul class="edu-list">
+              <li><span>Programación y Análisis de Sistemas</span><small>Instituto AIEP · 2026</small></li>
+              <li><span>Marketing Digital</span><small>Fundación Generation Chile · 2025</small></li>
+            </ul>
+          </div>
+          <div class="edu-block">
+            <p class="eyebrow">Certificaciones</p>
+            <ul class="edu-list">
+              <li><span>IT Automatización con Python</span><small>Certificado Profesional de Google · 2026</small></li>
+              <li><span>Desarrolladora Front-end Trainee</span><small>Talento Digital · 2026</small></li>
+              <li><span>Inmersión IA + Google Gemini</span><small>Alura Latam · 2025</small></li>
+              <li><span>SEO Internacional</span><small>SEMrush · 2025</small></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section class="projects" id="proyectos">
+      <div class="section-container">
+        <p class="eyebrow center">Portfolio</p>
+        <h2 class="section-title center">Proyectos destacados</h2>
+        <p class="section-subtitle center">Una selección de mis repositorios en <a href="https://github.com/javieraramirezpdev" target="_blank" rel="noopener" class="inline-link">github.com/javieraramirezpdev</a></p>
+
+        <div class="projects-grid">
+
+          <!-- PROYECTO 1 -->
+          <article class="project-card reveal">
+            <a href="https://github.com/javieraramirezpdev/Bytebook-library" target="_blank" rel="noopener" class="project-thumb" aria-label="Ver repositorio de Bytebook Library en GitHub">
+              <div class="browser-mock browser-mock--library">
+                <div class="browser-mock-bar">
+                  <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                  <span class="browser-mock-url">bytebook-library</span>
+                </div>
+                <div class="browser-mock-screen">
+                  <div class="mock-book" style="--i:0"></div>
+                  <div class="mock-book" style="--i:1"></div>
+                  <div class="mock-book" style="--i:2"></div>
+                  <div class="mock-book" style="--i:3"></div>
+                  <div class="mock-book" style="--i:4"></div>
+                  <div class="mock-shelf"></div>
+                </div>
+              </div>
+              <span class="project-visit">Visitar repositorio ↗</span>
             </a>
-            <a href="https://github.com/javieraramirezpdev/Centroholistico-Prananimal" target="_blank" rel="noopener" class="flex items-center gap-2 text-[14px] font-semibold text-white rounded-full px-5 py-2.5 hover:opacity-90 transition-opacity" style="background:var(--grad);">
-              <i class="fa-brands fa-github text-[14px]"></i> GitHub
+            <div class="project-info">
+              <h3>Bytebook Library</h3>
+              <p class="project-tech">HTML · CSS · JavaScript</p>
+              <p class="project-desc">Plataforma de biblioteca digital: catálogo, búsqueda y gestión de libros pensada como sistema web funcional.</p>
+              <a href="https://github.com/javieraramirezpdev/Bytebook-library" target="_blank" rel="noopener" class="project-link">Ver en GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- PROYECTO 2 -->
+          <article class="project-card reveal">
+            <a href="https://github.com/javieraramirezpdev/Centroholistico-Prananimal" target="_blank" rel="noopener" class="project-thumb" aria-label="Ver repositorio de Centro Holístico Prananimal en GitHub">
+              <div class="browser-mock browser-mock--vet">
+                <div class="browser-mock-bar">
+                  <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                  <span class="browser-mock-url">prananimal</span>
+                </div>
+                <div class="browser-mock-screen">
+                  <div class="mock-paw" aria-hidden="true">🐾</div>
+                  <div class="mock-line mock-line--lg"></div>
+                  <div class="mock-line mock-line--sm"></div>
+                  <div class="mock-card-row">
+                    <span class="mock-pill"></span><span class="mock-pill"></span><span class="mock-pill"></span>
+                  </div>
+                </div>
+              </div>
+              <span class="project-visit">Visitar repositorio ↗</span>
             </a>
+            <div class="project-info">
+              <h3>Centro Holístico Prananimal</h3>
+              <p class="project-tech">HTML · CSS · JavaScript</p>
+              <p class="project-desc">Sitio web institucional para un centro holístico animal: presentación de servicios y contacto.</p>
+              <a href="https://github.com/javieraramirezpdev/Centroholistico-Prananimal" target="_blank" rel="noopener" class="project-link">Ver en GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- PROYECTO 3 -->
+          <article class="project-card reveal">
+            <a href="https://github.com/javieraramirezpdev/PetCarePlatform.git" target="_blank" rel="noopener" class="project-thumb" aria-label="Ver repositorio de PetCare en GitHub">
+              <div class="browser-mock browser-mock--petcare">
+                <div class="browser-mock-bar">
+                  <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                  <span class="browser-mock-url">petcare</span>
+                </div>
+                <div class="browser-mock-screen">
+                  <div class="mock-pet-card">
+                    <span class="mock-pet-avatar">🐶</span>
+                    <div class="mock-pet-info">
+                      <span class="mock-line mock-line--sm" style="width:70%"></span>
+                      <span class="mock-line mock-line--sm" style="width:45%; background:rgba(248,250,252,0.05);"></span>
+                    </div>
+                  </div>
+                  <div class="mock-pet-card">
+                    <span class="mock-pet-avatar">🐱</span>
+                    <div class="mock-pet-info">
+                      <span class="mock-line mock-line--sm" style="width:55%"></span>
+                      <span class="mock-line mock-line--sm" style="width:35%; background:rgba(248,250,252,0.05);"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-visit">Visitar repositorio ↗</span>
+            </a>
+            <div class="project-info">
+              <h3>PetCare</h3>
+              <p class="project-tech">React · Next.js · Tailwind</p>
+              <p class="project-desc">Aplicación web orientada a la gestión y cuidado de mascotas: perfiles, recordatorios y seguimiento veterinario.</p>
+              <a href="https://github.com/javieraramirezpdev/PetCarePlatform.git" target="_blank" rel="noopener" class="project-link">Ver en GitHub ↗</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="projects-footnote">Revisa todos mis repositorios en <a href="https://github.com/javieraramirezpdev" target="_blank" rel="noopener" class="inline-link">github.com/javieraramirezpdev</a></p>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE MÍ ================= -->
+    <section class="about" id="sobre-mi">
+      <div class="section-container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-frame">
+            <img src="img/javi.jpg" alt="Retrato de Javiera Ramírez" loading="lazy">
           </div>
         </div>
-      </article>
 
-    </div>
-  </div>
-</section>
-
-<!-- ============ EXPERIENCIA ============ -->
-<section id="experiencia" class="py-24 px-5 sm:px-8 bg-bgsoft border-y border-line">
-  <div class="max-w-6xl mx-auto">
-    <div class="reveal max-w-2xl mb-14">
-      <span class="text-[13px] font-semibold tracking-[0.14em] uppercase text-purple">Experiencia</span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] leading-tight mt-3">Dónde he aplicado esto en el mundo real.</h2>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-6">
-
-      <div class="reveal card-hover bg-white border border-line rounded-2xl p-8">
-        <div class="flex items-center justify-between mb-5">
-          <h3 class="font-display font-bold text-[20px]">MG Motor Chile</h3>
-          <span class="text-[12px] font-mono text-inksoft border border-line rounded-full px-3 py-1">Práctica</span>
-        </div>
-        <p class="text-inksoft text-[14.5px] mb-5">Marketing Digital — Desarrollo de landing pages, optimización UX, CRM Salesforce, coordinación de campañas con influencers y análisis de resultados.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="text-[12px] border border-line rounded-full px-3 py-1">Salesforce CRM</span>
-          <span class="text-[12px] border border-line rounded-full px-3 py-1">Zoho CRM</span>
-          <span class="text-[12px] border border-line rounded-full px-3 py-1">Newsletters</span>
-          <span class="text-[12px] border border-line rounded-full px-3 py-1">UX de campañas</span>
-          <span class="text-[12px] border border-line rounded-full px-3 py-1">Influencers</span>
-        </div>
-        <div class="grad-border rounded-xl p-4 bg-purple/5">
-          <p class="text-[14px] font-medium"><i class="fa-solid fa-arrow-trend-up text-purple mr-2"></i>+20% de leads en una landing page gracias a mejoras de UX y contenido.</p>
+        <div class="about-content reveal">
+          <p class="eyebrow">Sobre mí</p>
+          <h2 class="about-title">Creo que el código también puede contar historias.</h2>
+          <p class="about-text">Estudiante de Programación y Análisis de Sistemas, enfocada en desarrollo frontend y diseño UX/UI. Antes de programar, trabajé en marketing digital y gestión de CRM - y esa mirada sigue presente en cómo diseño cada interfaz.</p>
+          <p class="about-text">Leo métricas, entender a un usuario y construir contenido antes de escribir una sola línea de código. Por eso no solo pienso en cómo se ve una pantalla, sino en si realmente cumple su objetivo: convertir, retener o comunicar.</p>
+          <a href="https://github.com/javieraramirezpdev" target="_blank" rel="noopener" class="btn btn-secondary">Conoce más sobre mi perfil →</a>
         </div>
       </div>
+    </section>
 
-      <div class="reveal reveal-delay-1 card-hover bg-white border border-line rounded-2xl p-8">
-        <div class="flex items-center justify-between mb-5">
-          <h3 class="font-display font-bold text-[20px]">Generation Chile</h3>
-          <span class="text-[12px] font-mono text-inksoft border border-line rounded-full px-3 py-1">Marketing Digital</span>
+    <!-- ================= SKILLS ================= -->
+    <section class="skills" id="skills">
+      <div class="section-container">
+        <p class="eyebrow center">Herramientas</p>
+        <h2 class="section-title center">Mi stack</h2>
+        <p class="section-subtitle center">Desarrollo frontend con base real en datos, CRM y estrategia digital.</p>
+
+        <div class="skills-groups reveal">
+
+          <div class="skills-group">
+            <h3 class="skills-group-title">Frontend &amp; Programación</h3>
+            <div class="skills-grid">
+              <div class="skill-card"><span class="skill-num">01</span><span class="skill-name">HTML5</span></div>
+              <div class="skill-card"><span class="skill-num">02</span><span class="skill-name">CSS3</span></div>
+              <div class="skill-card"><span class="skill-num">03</span><span class="skill-name">JavaScript</span></div>
+              <div class="skill-card"><span class="skill-num">04</span><span class="skill-name">TypeScript</span></div>
+              <div class="skill-card"><span class="skill-num">05</span><span class="skill-name">React</span></div>
+              <div class="skill-card"><span class="skill-num">06</span><span class="skill-name">Tailwind CSS</span></div>
+              <div class="skill-card"><span class="skill-num">07</span><span class="skill-name">Python</span></div>
+              <div class="skill-card"><span class="skill-num">08</span><span class="skill-name">APIs REST</span></div>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-group-title">Datos, CRM &amp; Marketing</h3>
+            <div class="skills-grid">
+              <div class="skill-card"><span class="skill-num">01</span><span class="skill-name">Salesforce CRM</span></div>
+              <div class="skill-card"><span class="skill-num">02</span><span class="skill-name">Zoho CRM</span></div>
+              <div class="skill-card"><span class="skill-num">03</span><span class="skill-name">Power BI</span></div>
+              <div class="skill-card"><span class="skill-num">04</span><span class="skill-name">Google Analytics</span></div>
+              <div class="skill-card"><span class="skill-num">05</span><span class="skill-name">Google Ads</span></div>
+              <div class="skill-card"><span class="skill-num">06</span><span class="skill-name">SEMrush</span></div>
+              <div class="skill-card"><span class="skill-num">07</span><span class="skill-name">Meta Business Suite</span></div>
+              <div class="skill-card"><span class="skill-num">08</span><span class="skill-name">WordPress</span></div>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-group-title">Diseño &amp; Herramientas</h3>
+            <div class="skills-grid">
+              <div class="skill-card"><span class="skill-num">01</span><span class="skill-name">Figma</span></div>
+              <div class="skill-card"><span class="skill-num">02</span><span class="skill-name">Canva</span></div>
+              <div class="skill-card"><span class="skill-num">03</span><span class="skill-name">Git / GitHub</span></div>
+              <div class="skill-card"><span class="skill-num">04</span><span class="skill-name">Notion</span></div>
+            </div>
+          </div>
+
         </div>
-        <p class="text-inksoft text-[14.5px] mb-5">Estrategia digital, branding y landing pages en WordPress con enfoque en storytelling y marketing orgánico.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="text-[12px] border border-line rounded-full px-3 py-1">Estrategia digital</span>
-          <span class="text-[12px] border border-line rounded-full px-3 py-1">Branding</span>
-          <span class="text-[12px] border border-line rounded-full px-3 py-1">WordPress</span>
-          <span class="text-[12px] border border-line rounded-full px-3 py-1">Storytelling</span>
-          <span class="text-[12px] border border-line rounded-full px-3 py-1">Segmentación</span>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="contact" id="contacto">
+      <div class="section-container contact-container reveal">
+        <h2 class="contact-title">¿Tienes un proyecto?</h2>
+        <p class="contact-subtitle">Hagamos algo increíble juntos.</p>
+
+        <!-- Correo real, extraído de tu CV -->
+        <a href="mailto:javiera.ramirezp.dev@gmail.com" class="contact-email">javiera.ramirezp.dev@gmail.com <span class="arrow">↗</span></a>
+
+        <div class="contact-socials">
+          <a href="https://github.com/javieraramirezpdev" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.5 0 12.3c0 5.43 3.44 10.03 8.2 11.65.6.11.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.66-4.04-1.66-.55-1.43-1.34-1.82-1.34-1.82-1.1-.77.08-.75.08-.75 1.21.09 1.85 1.27 1.85 1.27 1.08 1.9 2.83 1.35 3.52 1.03.11-.8.42-1.35.76-1.66-2.67-.31-5.47-1.37-5.47-6.1 0-1.35.47-2.45 1.24-3.31-.12-.31-.54-1.57.12-3.28 0 0 1.01-.33 3.3 1.27a11.2 11.2 0 0 1 6.02 0c2.29-1.6 3.3-1.27 3.3-1.27.66 1.71.24 2.97.12 3.28.77.86 1.24 1.96 1.24 3.31 0 4.74-2.81 5.79-5.48 6.09.43.38.81 1.14.81 2.3 0 1.66-.02 3-.02 3.41 0 .33.22.72.83.6C20.57 22.32 24 17.73 24 12.3 24 5.5 18.63 0 12 0Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/javieraramirezparraguez/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn (PLACEHOLDER)">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="https://wa.me/56975260688" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp (PLACEHOLDER: reemplaza el número)">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12.04 0C5.44 0 .07 5.36.07 11.97c0 2.1.55 4.16 1.6 5.98L0 24l6.19-1.62a11.9 11.9 0 0 0 5.85 1.49h.01c6.6 0 11.97-5.36 11.97-11.97 0-3.2-1.24-6.2-3.5-8.46A11.9 11.9 0 0 0 12.04 0Zm0 21.8h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.68.96.98-3.58-.23-.37a9.8 9.8 0 0 1-1.5-5.26c0-5.42 4.41-9.83 9.84-9.83 2.63 0 5.1 1.02 6.96 2.88a9.78 9.78 0 0 1 2.88 6.96c0 5.42-4.41 9.82-9.88 9.82Zm5.4-7.37c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.5-.17 0-.37-.03-.57-.03-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.75-.71 2-1.4.24-.68.24-1.27.17-1.4-.07-.12-.27-.2-.57-.35Z"/></svg>
+          </a>
         </div>
-        <div class="grad-border rounded-xl p-4 bg-pink/5">
-          <p class="text-[14px] font-medium"><i class="fa-solid fa-arrow-trend-up text-pink mr-2"></i>60 leads · 10.2K visualizaciones · +155 seguidores.</p>
-        </div>
       </div>
+    </section>
+  </main>
 
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="section-container footer-container">
+      <p>© 2026 Javiera Ramírez</p>
+      <p class="footer-tag">Diseñado y construido con curiosidad.</p>
     </div>
+  </footer>
 
-  </div>
-</section>
-
-<!-- ============ FORMACIÓN ACADÉMICA ============ -->
-<section id="formacion" class="py-24 px-5 sm:px-8">
-  <div class="max-w-6xl mx-auto">
-    <div class="reveal mb-16">
-      <span class="inline-flex items-center gap-2 text-[13px] font-semibold tracking-[0.14em] uppercase text-purple">
-        <span class="w-1 h-4 rounded-full inline-block" style="background:var(--grad);"></span>
-        Formación
-      </span>
-      <h2 class="font-display font-extrabold text-[30px] sm:text-[38px] leading-tight mt-3">académica</h2>
-    </div>
-
-    <!-- Timeline -->
-    <div class="reveal relative pl-8 mb-16 max-w-2xl">
-      <div class="absolute left-[5px] top-2 bottom-2 w-px" style="background:linear-gradient(180deg,#7B5CFA,#EBE6F5);"></div>
-
-      <div class="relative mb-10">
-        <span class="absolute -left-8 top-1.5 w-3 h-3 rounded-full ring-4 ring-white" style="background:var(--grad);"></span>
-        <p class="text-[13px] font-mono text-inksoft mb-1">2026 - en curso</p>
-        <h3 class="font-display font-bold text-[19px] sm:text-[21px]">Programación y Análisis de Sistemas</h3>
-        <p class="text-inksoft text-[14.5px] mt-0.5">Instituto AIEP</p>
-      </div>
-
-      <div class="relative">
-        <span class="absolute -left-8 top-1.5 w-3 h-3 rounded-full ring-4 ring-white" style="background:var(--grad);"></span>
-        <p class="text-[13px] font-mono text-inksoft mb-1">2025</p>
-        <h3 class="font-display font-bold text-[19px] sm:text-[21px]">Marketing Digital</h3>
-        <p class="text-inksoft text-[14.5px] mt-0.5">Fundación Generation Chile</p>
-      </div>
-    </div>
-
-    <!-- Certifications -->
-    <div class="reveal">
-      <h3 class="font-display font-bold text-[22px] mb-6">Certificaciones</h3>
-      <div class="grid sm:grid-cols-2 gap-4" id="certs-grid"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CTA BANNER ============ -->
-<section class="py-24 px-5 sm:px-8">
-  <div class="max-w-5xl mx-auto grad-border rounded-3xl p-10 sm:p-16 text-center relative overflow-hidden" style="background:linear-gradient(180deg,#FAF9FC,#ffffff);">
-    <div class="reveal">
-      <h2 class="font-display font-bold text-[28px] sm:text-[38px] leading-tight max-w-2xl mx-auto">¿Necesitas una web que venda, no que solo se vea bien?</h2>
-      <p class="text-inksoft mt-4 text-[16px] max-w-xl mx-auto">¿Tienes una idea o un proyecto en mente? Conversemos y veamos cómo transformarlo en una experiencia digital que aporte valor a tu negocio.</p>
-      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#contacto" class="w-full sm:w-auto text-white font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-opacity" style="background:var(--grad);">Trabajemos juntos</a>
-        <a href="mailto:hola@javieraramirez.dev" class="w-full sm:w-auto font-semibold px-7 py-3.5 rounded-full border border-line hover:border-ink transition-colors">Escríbeme un correo</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- ============ FOOTER / CONTACTO ============ -->
-<footer id="contacto" class="bg-ink text-white pt-20 pb-10 px-5 sm:px-8">
-  <div class="max-w-6xl mx-auto">
-    <div class="grid md:grid-cols-[1.3fr_1fr_1fr] gap-12 pb-14 border-b border-white/10">
-      <div>
-        <a href="#top" class="flex items-center gap-2.5 mb-5">
-          <span class="w-9 h-9 rounded-[10px] grid place-items-center" style="background:var(--grad);">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4 17L10 4" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <path d="M14 4L20 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="12" cy="19.5" r="1.6" fill="white"/>
-            </svg>
-          </span>
-          <span class="font-display font-bold text-[17px]">Javiera Ramírez</span>
-        </a>
-        <p class="text-white/60 text-[14.5px] leading-relaxed max-w-sm">Marketing digital, diseño UX/UI y desarrollo frontend para negocios que quieren vender más en internet.</p>
-      </div>
-
-      <div>
-        <h4 class="font-display font-semibold text-[14px] uppercase tracking-wide text-white/50 mb-4">Navegación</h4>
-        <ul class="space-y-2.5 text-[14.5px] text-white/80">
-          <li><a href="#servicios" class="hover:text-white transition-colors">Servicios</a></li>
-          <li><a href="#proyectos" class="hover:text-white transition-colors">Proyectos</a></li>
-          <li><a href="#proceso" class="hover:text-white transition-colors">Proceso</a></li>
-          <li><a href="#experiencia" class="hover:text-white transition-colors">Experiencia</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="font-display font-semibold text-[14px] uppercase tracking-wide text-white/50 mb-4">Contacto</h4>
-        <ul class="space-y-2.5 text-[14.5px] text-white/80">
-          <li><a href="https://github.com/javieraramirezpdev" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-brands fa-github w-4"></i> GitHub</a></li>
-          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-brands fa-linkedin w-4"></i> LinkedIn</a></li>
-          <li><a href="mailto:hola@javieraramirez.dev" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-solid fa-envelope w-4"></i> Correo</a></li>
-          <li><a href="https://wa.me/56900000000" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-white transition-colors"><i class="fa-brands fa-whatsapp w-4"></i> WhatsApp</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-white/45">
-      <p>© 2026 Javiera Ramírez. Todos los derechos reservados.</p>
-      <p class="font-mono">Diseñado y desarrollado por Javiera Ramírez</p>
-    </div>
-  </div>
-</footer>
-
-<script>
-  // ---------- Mobile menu ----------
-  const hamburgerBtn = document.getElementById('hamburger-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  function toggleMenu(force){
-    const isOpen = force !== undefined ? force : !mobileMenu.classList.contains('open');
-    mobileMenu.classList.toggle('open', isOpen);
-    hamburgerBtn.classList.toggle('open', isOpen);
-    hamburgerBtn.setAttribute('aria-expanded', isOpen);
-    hamburgerBtn.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
-    document.body.style.overflow = isOpen ? 'hidden' : '';
-  }
-  hamburgerBtn.addEventListener('click', () => toggleMenu());
-  document.querySelectorAll('.mobile-link').forEach(el => el.addEventListener('click', () => toggleMenu(false)));
-
-  // ---------- Scroll reveal ----------
-  const revealEls = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('in');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  revealEls.forEach(el => io.observe(el));
-
-  // ---------- Typewriter in hero search ----------
-  const words = ['más leads.', 'una landing page que venda.', 'presencia en Google.', 'estrategia digital.', 'un sitio que convierta.'];
-  const typedEl = document.getElementById('typed-text');
-  let wIndex = 0, cIndex = 0, deleting = false;
-  function typeLoop(){
-    const current = words[wIndex];
-    if(!deleting){
-      cIndex++;
-      typedEl.textContent = current.slice(0, cIndex);
-      if(cIndex === current.length){ deleting = true; setTimeout(typeLoop, 1400); return; }
-    } else {
-      cIndex--;
-      typedEl.textContent = current.slice(0, cIndex);
-      if(cIndex === 0){ deleting = false; wIndex = (wIndex + 1) % words.length; }
-    }
-    setTimeout(typeLoop, deleting ? 35 : 55);
-  }
-  typeLoop();
-
-  document.querySelectorAll('.need-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      document.getElementById('servicios').scrollIntoView({behavior:'smooth'});
-    });
-  });
-
-  // ---------- Count up stats ----------
-  const counters = document.querySelectorAll('.counter');
-  const counterIO = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        const el = entry.target;
-        const target = parseFloat(el.dataset.target);
-        const suffix = el.dataset.suffix || '';
-        const isDecimal = el.dataset.decimal === 'true';
-        const duration = 1400;
-        const start = performance.now();
-        function step(now){
-          const progress = Math.min((now - start) / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          const value = target * eased;
-          el.textContent = (isDecimal ? value.toFixed(1) : Math.round(value)) + suffix;
-          if(progress < 1) requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-        counterIO.unobserve(el);
-      }
-    });
-  }, { threshold: 0.5 });
-  counters.forEach(c => counterIO.observe(c));
-
-  // ---------- Services data & render ----------
-  const services = [
-    { icon:'fa-bullhorn', title:'Marketing Digital', text:'Planifico dónde y cómo aparece tu marca para que cada peso invertido traiga clientes, no solo visitas.' },
-    { icon:'fa-rocket', title:'Diseño de Landing Pages', text:'Páginas de una sola intención: convertir. Cada bloque está ahí para mover al visitante hacia la acción.' },
-    { icon:'fa-pen-ruler', title:'Diseño Web', text:'Un sitio que refleja tu marca y guía al visitante sin fricción hasta que toma la decisión de contactarte.' },
-    { icon:'fa-code', title:'Desarrollo Frontend', text:'Código limpio y rápido: sitios livianos que cargan bien, se ven bien y no te frenan cuando quieres escalar.' },
-    { icon:'fa-magnifying-glass-chart', title:'SEO', text:'Que te encuentren cuando ya están buscando lo que ofreces, sin depender solo de publicidad paga.' },
-    { icon:'fa-money-bill-trend-up', title:'SEM', text:'Campañas de búsqueda pagada enfocadas en captar intención de compra real, no solo clics.' },
-    { icon:'fa-google', title:'Google Ads', brand:true, text:'Configuro y optimizo campañas para que cada clic tenga sentido dentro de tu presupuesto.' },
-    { icon:'fa-meta', title:'Meta Ads', brand:true, text:'Segmentación precisa en Instagram y Facebook para llegar a quien realmente puede convertirse en cliente.' },
-    { icon:'fa-arrow-up-right-dots', title:'Optimización de Conversión (CRO)', text:'Reviso cada punto donde un visitante podría irse, y lo rediseño para que en cambio avance.' },
-    { icon:'fa-diagram-project', title:'Estrategia Digital', text:'Un plan claro de cómo tu negocio va a crecer online, con prioridades y métricas, no solo tácticas sueltas.' },
-    { icon:'fa-lightbulb', title:'Consultoría para emprendedores', text:'Acompañamiento desde la idea: qué construir primero, dónde enfocar el presupuesto y cómo validar rápido.' },
-    { icon:'fa-hand-pointer', title:'Optimización UX', text:'Detecto la fricción invisible en tu sitio actual y la elimino para que más visitas se conviertan en ventas.' },
-  ];
-  const grid = document.getElementById('services-grid');
-  services.forEach((s, i) => {
-    const card = document.createElement('div');
-    card.className = `reveal reveal-delay-${(i % 4)} card-hover bg-white border border-line rounded-2xl p-7`;
-    card.innerHTML = `
-      <div class="w-11 h-11 rounded-xl grid place-items-center mb-5" style="background:linear-gradient(135deg, rgba(123,92,250,.12), rgba(245,130,174,.12));">
-        <i class="${s.brand ? 'fa-brands' : 'fa-solid'} ${s.icon} text-purple text-[16px]"></i>
-      </div>
-      <h3 class="font-display font-semibold text-[17px] mb-2">${s.title}</h3>
-      <p class="text-inksoft text-[14px] leading-relaxed">${s.text}</p>
-    `;
-    grid.appendChild(card);
-    io.observe(card);
-  });
-
-  // ---------- Certifications ----------
-  const certs = [
-    { title: 'Certificado Profesional de Google: Marketing Digital y Comercio Electrónico', org: 'Google', year: '2026' },
-    { title: 'Certificado Profesional de Google: IT Automatización con Python', org: 'Google', year: '2026' },
-    { title: 'Desarrolladora Front-end Trainee', org: 'Talento Digital', year: '2026' },
-    { title: 'Curso de Inmersión IA + Google Gemini', org: 'Alura Latam', year: '2025' },
-    { title: 'Curso de SEO Internacional', org: 'SEMrush', year: '2025' },
-  ];
-  const certsGrid = document.getElementById('certs-grid');
-  certs.forEach((c, i) => {
-    const card = document.createElement('div');
-    card.className = `reveal reveal-delay-${i % 4} card-hover flex items-start gap-3.5 bg-white border border-line rounded-2xl p-5`;
-    card.innerHTML = `
-      <span class="shrink-0 w-6 h-6 rounded-full grid place-items-center mt-0.5" style="background:var(--grad);">
-        <i class="fa-solid fa-check text-white text-[11px]"></i>
-      </span>
-      <div>
-        <p class="font-display font-semibold text-[15px] leading-snug">${c.title}</p>
-        <p class="text-inksoft text-[13px] mt-1">${c.org} · ${c.year}</p>
-      </div>
-    `;
-    certsGrid.appendChild(card);
-    io.observe(card);
-  });
-</script>
-
-</body>
-</html>
+  <script src="script.js"></script>
 </body>
 </html>
