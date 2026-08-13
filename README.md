@@ -87,13 +87,6 @@ Sitio institucional para un centro holístico animal.
 
 ---
 
-### 📊 Actividad
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=javieraramirezpdev&show_icons=true&hide_border=true&bg_color=0F0F14&title_color=C4B5FD&icon_color=F472B6&text_color=F8FAFC" alt="GitHub stats" height="165"/>
-<img src="https://streak-stats.demolab.com?user=javieraramirezpdev&hide_border=true&background=0F0F14&ring=8B5CF6&fire=F472B6&currStreakLabel=C4B5FD&sideLabels=F8FAFC&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=A1A1AA" alt="GitHub streak" height="165"/>
-</div>
-
 <p align="center">
 💬 Del marketing digital al desarrollo frontend — pensando siempre en el usuario y en el resultado.
 </p>
